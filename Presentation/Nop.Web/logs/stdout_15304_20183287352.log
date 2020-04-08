@@ -1,0 +1,113 @@
+Hosting environment: Development
+Content root path: C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web
+Now listening on: http://localhost:29266
+Application started. Press Ctrl+C to shut down.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.HomeController.Index (Nop.Web) with arguments ((null)) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.HomeController.Index (Nop.Web) in 16020.4596ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 17574.7073ms 200 text/html; charset=utf-8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

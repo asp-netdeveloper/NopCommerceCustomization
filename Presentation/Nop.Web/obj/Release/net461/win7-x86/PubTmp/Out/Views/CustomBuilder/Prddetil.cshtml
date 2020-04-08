@@ -1,0 +1,79 @@
+﻿@using Nop.Core.Domain.Orders
+@using System;
+@using System.Data;
+@using System.Linq;
+@using Nop.Core;
+@using Nop.Core.Data;
+@using Nop.Core.Domain.Catalog;
+@using System.Data.SqlClient;
+@using Nop.Services.Media
+@using System.Text;
+
+@inject IPictureService pictureService
+@inject Nop.Core.IWebHelper webHelper
+
+
+<div class="top cf">
+    <span class="overlay">Select A Pre Build Custom Whip</span>
+    <button class="close" onclick="closeprosetup();">Close</button>
+</div>
+<div class="note">
+    Select a Pre Built Custom Whip and Their Current Setup will automatically Load All Products.
+</div>
+
+
+
+@{
+    SqlConnection con = null;
+    //con = new SqlConnection("data source=.; database=npbuilder; integrated security=SSPI;MultipleActiveResultSets=True");
+    con = new SqlConnection(new DataSettingsManager().LoadSettings().DataConnectionString);
+    con.Open();
+    SqlCommand cmd = new SqlCommand("SELECT Product.Id, Product.Name FROM Product INNER JOIN Product_Category_Mapping " +
+            "ON Product.Id = Product_Category_Mapping.ProductId WHERE Product_Category_Mapping.CategoryId = 59", con);
+    SqlDataReader sdr = cmd.ExecuteReader();
+    // sdr.Read();
+    //var prdnamequery = sdr["Name"].ToString();
+}
+
+<div class="build_list cf">
+    <ul class="cf">
+        @while (sdr.Read())
+        {
+            var prdid = sdr["Id"];
+            SqlCommand slugcmd = new SqlCommand("SELECT UrlRecord.Slug FROM UrlRecord INNER JOIN Product ON UrlRecord.EntityId = Product.Id WHERE Product.Id =" + prdid + " AND UrlRecord.EntityName = 'Product'", con);
+            SqlDataReader slugsdr = slugcmd.ExecuteReader();
+            slugsdr.Read();
+            var seName = slugsdr["Slug"].ToString();
+            SqlCommand picdcmd = new SqlCommand("SELECT id FROM Picture where SeoFilename = '" + seName + "'", con);
+            SqlDataReader picidsdr = picdcmd.ExecuteReader();
+            picidsdr.Read();
+            var picture = pictureService.GetPicturesByProductId(Convert.ToInt32(prdid)).FirstOrDefault();
+            var prdimgquery = new StringBuilder();
+            if (picture != null)
+            {
+                //var seName = picture.SeoFilename;
+                seName = slugsdr["Slug"].ToString();
+                //var pictureId = picture.Id;
+                var pictureId = picidsdr["id"].ToString();
+                //var mimeType = picture.MimeType;
+                var mimeType = "image/jpeg";
+
+                prdimgquery.Append(webHelper.GetStoreLocation());
+                prdimgquery.Append("images/thumbs/");
+                prdimgquery.Append(pictureId.ToString().PadLeft(7, '0'));
+                prdimgquery.Append("_" + seName);
+                prdimgquery.Append("." + mimeType.Replace("image/", ""));
+            }
+            <li>
+                <a class="add_button" href="@Url.Action("Prddetil", "CustomBuilder", new { id = prdid })">
+                    <img src=@prdimgquery srcset="https://img.skatewarehouse.com/framework16/images/pros/2x/BARL.png 2x" data-proimage="BARL" alt="">
+                    <span class="name">@sdr["Name"] </span>
+                </a>
+            </li>}
+    </ul>
+</div>
+
+@{
+
+    con.Close();
+}

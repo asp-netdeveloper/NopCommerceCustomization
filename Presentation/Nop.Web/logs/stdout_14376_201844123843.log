@@ -1,0 +1,120 @@
+Hosting environment: Development
+Content root path: C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web
+Now listening on: http://localhost:20838
+Application started. Press Ctrl+C to shut down.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.HomeController.Index (Nop.Web) with arguments ((null)) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.HomeController.Index (Nop.Web) in 25304.0531ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 27506.2106ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/custombuilder-2  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.TopicController.TopicDetails (Nop.Web) with arguments (13) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Topic/TopicDetails.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.TopicController.TopicDetails (Nop.Web) in 528.7651ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 802.9651ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/CustomBuilder  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CustomBuilderController.Index (Nop.Web) with arguments ((null)) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/CustomBuilder/Index.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CustomBuilderController.Index (Nop.Web) in 2886.3423ms
+info: Microsoft.AspNetCore.Session.DistributedSession[3]
+      Session started; Key:d182ecf9-4ad0-09ea-6239-d91ab4ac9f10, Id:fc39e62f-3a92-ff31-c3a3-5b56ff332aa0
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 3132.9777ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/srcset=%22https:/img.skatewarehouse.com/framework16/images/pros/2x/BARL.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 316.5333ms 404 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/flagc?bldr  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CatalogController.Category (Nop.Web) with arguments (45, Nop.Web.Models.Catalog.CatalogPagingFilteringModel) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Catalog/CategoryTemplate.ProductsInGridOrLines.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CatalogController.Category (Nop.Web) in 4185.9494ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 4432.8178ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/3-x-5-3?bldr  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CatalogController.Category (Nop.Web) with arguments (46, Nop.Web.Models.Catalog.CatalogPagingFilteringModel) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Catalog/CategoryTemplate.ProductsInGridOrLines.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CatalogController.Category (Nop.Web) in 732.7904ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 935.9572ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/regular-pennant-2?bldr  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CatalogController.Category (Nop.Web) with arguments (49, Nop.Web.Models.Catalog.CatalogPagingFilteringModel) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Catalog/CategoryTemplate.ProductsInGridOrLines.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CatalogController.Category (Nop.Web) in 460.4643ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 630.0358ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/CustomBuilder?prdidflag=68&prdimgflag=http%3A%2F%2Flocalhost%3A15536%2Fimages%2Fthumbs%2F0000092_clickwhip-pennant-flag_415.jpeg&prdnameflag=ClickWhip%20pennant%20flag&prdskuflag=clickwhip-pennant-flag&prdpriceflag=$3.60  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CustomBuilderController.Index (Nop.Web) with arguments ((null)) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/CustomBuilder/Index.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CustomBuilderController.Index (Nop.Web) in 1082.2851ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 1264.6985ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/srcset=%22https:/img.skatewarehouse.com/framework16/images/pros/2x/BARL.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 213.0427ms 404 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/flag-shaft-2?bldrshaft  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CatalogController.Category (Nop.Web) with arguments (51, Nop.Web.Models.Catalog.CatalogPagingFilteringModel) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Catalog/CategoryTemplate.ProductsInGridOrLines.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CatalogController.Category (Nop.Web) in 483.9816ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 659.514ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 69
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Messages.QueuedMessagesSendTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 250.1367ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 433.9275ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/fully-lit-2?bldrshaft  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CatalogController.Category (Nop.Web) with arguments (52, Nop.Web.Models.Catalog.CatalogPagingFilteringModel) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Catalog/CategoryTemplate.ProductsInGridOrLines.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CatalogController.Category (Nop.Web) in 503.3882ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 679.1263ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/heavy-duty-livewire?bldrshaft  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ProductController.ProductDetails (Nop.Web) with arguments (71, 0) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Product/ProductTemplate.Simple.cshtml.

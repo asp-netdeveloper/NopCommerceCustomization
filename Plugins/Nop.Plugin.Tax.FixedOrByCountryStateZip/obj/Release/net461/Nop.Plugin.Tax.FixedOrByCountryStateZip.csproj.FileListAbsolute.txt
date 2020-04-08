@@ -1,0 +1,13 @@
+C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Plugins\Tax.FixedOrByCountryStateZip\plugin.json
+C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Plugins\Tax.FixedOrByCountryStateZip\Views\Configure.cshtml
+C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Plugins\Tax.FixedOrByCountryStateZip\Views\_CountryStateZip.cshtml
+C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Plugins\Tax.FixedOrByCountryStateZip\Views\_FixedRate.cshtml
+C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Plugins\Tax.FixedOrByCountryStateZip\Views\_ViewImports.cshtml
+C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Plugins\Tax.FixedOrByCountryStateZip\logo.jpg
+C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Plugins\Tax.FixedOrByCountryStateZip\Nop.Plugin.Tax.FixedOrByCountryStateZip.dll
+C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Plugins\Tax.FixedOrByCountryStateZip\Nop.Plugin.Tax.FixedOrByCountryStateZip.pdb
+C:\Users\Khushbu\source\repos\npbuilder\Plugins\Nop.Plugin.Tax.FixedOrByCountryStateZip\obj\Release\net461\Nop.Plugin.Tax.FixedOrByCountryStateZip.csproj.CoreCompileInputs.cache
+C:\Users\Khushbu\source\repos\npbuilder\Plugins\Nop.Plugin.Tax.FixedOrByCountryStateZip\obj\Release\net461\Nop.Plugin.Tax.FixedOrByCountryStateZip.AssemblyInfoInputs.cache
+C:\Users\Khushbu\source\repos\npbuilder\Plugins\Nop.Plugin.Tax.FixedOrByCountryStateZip\obj\Release\net461\Nop.Plugin.Tax.FixedOrByCountryStateZip.AssemblyInfo.cs
+C:\Users\Khushbu\source\repos\npbuilder\Plugins\Nop.Plugin.Tax.FixedOrByCountryStateZip\obj\Release\net461\Nop.Plugin.Tax.FixedOrByCountryStateZip.dll
+C:\Users\Khushbu\source\repos\npbuilder\Plugins\Nop.Plugin.Tax.FixedOrByCountryStateZip\obj\Release\net461\Nop.Plugin.Tax.FixedOrByCountryStateZip.pdb

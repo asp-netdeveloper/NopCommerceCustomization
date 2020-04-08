@@ -1,0 +1,331 @@
+Hosting environment: Development
+Content root path: C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web
+Now listening on: http://localhost:12944
+Application started. Press Ctrl+C to shut down.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.HomeController.Index (Nop.Web) with arguments ((null)) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.HomeController.Index (Nop.Web) in 22810.2037ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 25108.9768ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 69
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Messages.QueuedMessagesSendTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 367.4192ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 622.0839ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/custombuilder-2  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.TopicController.TopicDetails (Nop.Web) with arguments (13) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Topic/TopicDetails.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.TopicController.TopicDetails (Nop.Web) in 591.0803ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 913.1438ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/CustomBuilder  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CustomBuilderController.Index (Nop.Web) with arguments ((null)) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/CustomBuilder/Index.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CustomBuilderController.Index (Nop.Web) in 3508.6252ms
+info: Microsoft.AspNetCore.Session.DistributedSession[3]
+      Session started; Key:02da9f76-1cdf-f306-f171-a0ec461e86a1, Id:e37281e5-ee3b-3bfc-3f3f-5c1c5915dd21
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 3738.7528ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/srcset=%22https:/img.skatewarehouse.com/framework16/images/pros/2x/BARL.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 339.7987ms 404 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/flagc?bldr  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CatalogController.Category (Nop.Web) with arguments (45, Nop.Web.Models.Catalog.CatalogPagingFilteringModel) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Catalog/CategoryTemplate.ProductsInGridOrLines.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CatalogController.Category (Nop.Web) in 4863.6866ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 5088.2423ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/3-x-5-3?bldr  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CatalogController.Category (Nop.Web) with arguments (46, Nop.Web.Models.Catalog.CatalogPagingFilteringModel) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Catalog/CategoryTemplate.ProductsInGridOrLines.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CatalogController.Category (Nop.Web) in 429.8663ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 626.798ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/CustomBuilder?prdidflag=65&prdimgflag=http%3A%2F%2Flocalhost%3A15536%2Fimages%2Fthumbs%2F0000091_aces-and-8s-perfect_415.jpeg&prdnameflag=Aces%20and%208%27s%20perfect&prdskuflag=aces-and-8s-perfect&prdpriceflag=$17.96  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CustomBuilderController.Index (Nop.Web) with arguments ((null)) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/CustomBuilder/Index.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CustomBuilderController.Index (Nop.Web) in 1042.1044ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 1246.4644ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/srcset=%22https:/img.skatewarehouse.com/framework16/images/pros/2x/BARL.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 229.5759ms 404 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/flag-shaft-2?bldrshaft  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CatalogController.Category (Nop.Web) with arguments (51, Nop.Web.Models.Catalog.CatalogPagingFilteringModel) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Catalog/CategoryTemplate.ProductsInGridOrLines.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CatalogController.Category (Nop.Web) in 461.9305ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 665.2981ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/fully-lit-2?bldrshaft  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CatalogController.Category (Nop.Web) with arguments (52, Nop.Web.Models.Catalog.CatalogPagingFilteringModel) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Catalog/CategoryTemplate.ProductsInGridOrLines.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CatalogController.Category (Nop.Web) in 573.5877ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 776.6541ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 69
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Messages.QueuedMessagesSendTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 99.7185ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 311.0104ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 69
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Messages.QueuedMessagesSendTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 173.2105ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 366.2177ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 69
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Messages.QueuedMessagesSendTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 122.3178ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 353.7598ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 70
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 58
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Directory.UpdateExchangeRateTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Common.KeepAliveTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/keepalive/index  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 4.1975ms 200 
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 304.1245ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 535.099ms 204 
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 343.8566ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 569.5284ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 69
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Messages.QueuedMessagesSendTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 107.9826ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 380.4612ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 69
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Messages.QueuedMessagesSendTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 120.1079ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 345.8446ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 69
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Messages.QueuedMessagesSendTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 135.8047ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 381.1141ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 69
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Messages.QueuedMessagesSendTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 123.1172ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 356.8424ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 69
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Messages.QueuedMessagesSendTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 143.0199ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 490.0056ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 64
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Customers.DeleteGuestsTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 304.5568ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 520.3484ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 58
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Common.KeepAliveTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/keepalive/index  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 21.954ms 200 
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 101.2881ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 295.1074ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 69
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Messages.QueuedMessagesSendTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 120.4586ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 366.8619ms 204 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

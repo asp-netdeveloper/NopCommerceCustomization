@@ -1,0 +1,11 @@
+C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Plugins\DiscountRules.CustomerRoles\plugin.json
+C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Plugins\DiscountRules.CustomerRoles\Views\Configure.cshtml
+C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Plugins\DiscountRules.CustomerRoles\Views\_ViewImports.cshtml
+C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Plugins\DiscountRules.CustomerRoles\logo.jpg
+C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Plugins\DiscountRules.CustomerRoles\Nop.Plugin.DiscountRules.CustomerRoles.dll
+C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Plugins\DiscountRules.CustomerRoles\Nop.Plugin.DiscountRules.CustomerRoles.pdb
+C:\Users\Khushbu\source\repos\npbuilder\Plugins\Nop.Plugin.DiscountRules.CustomerRoles\obj\Debug\net461\Nop.Plugin.DiscountRules.CustomerRoles.csproj.CoreCompileInputs.cache
+C:\Users\Khushbu\source\repos\npbuilder\Plugins\Nop.Plugin.DiscountRules.CustomerRoles\obj\Debug\net461\Nop.Plugin.DiscountRules.CustomerRoles.AssemblyInfoInputs.cache
+C:\Users\Khushbu\source\repos\npbuilder\Plugins\Nop.Plugin.DiscountRules.CustomerRoles\obj\Debug\net461\Nop.Plugin.DiscountRules.CustomerRoles.AssemblyInfo.cs
+C:\Users\Khushbu\source\repos\npbuilder\Plugins\Nop.Plugin.DiscountRules.CustomerRoles\obj\Debug\net461\Nop.Plugin.DiscountRules.CustomerRoles.dll
+C:\Users\Khushbu\source\repos\npbuilder\Plugins\Nop.Plugin.DiscountRules.CustomerRoles\obj\Debug\net461\Nop.Plugin.DiscountRules.CustomerRoles.pdb

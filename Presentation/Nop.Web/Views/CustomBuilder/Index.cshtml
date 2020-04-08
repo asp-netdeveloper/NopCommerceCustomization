@@ -1,0 +1,548 @@
+﻿@inject Nop.Core.IWebHelper webHelper
+
+@model ProductDetailsModel.AddToCartModel
+@inject IPictureService pictureService
+@inject IWorkContext workContext
+
+
+@using Nop.Core.Domain.Orders
+@using Nop.Services.Media
+@using Nop.Core
+@using Nop.Core.Infrastructure
+@using Nop.Core.Domain.Customers
+
+@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor HttpContextAccessor
+
+
+@{
+    Layout = "_Root";
+    var x = "";
+    var y = "";
+    var z = "";
+    var sku = "";
+    var Total = "$0.00";
+    Double n1 = 0.00; Double n2 = 0.00; Double n3 = 0.00; Double n4 = 0.00; Double n5 = 0.00; Double n6 = 0.00;
+    var discount = "";
+
+    var usern = this.Context.Request.Query["usern"];
+
+}
+<!-- 1. Add latest jQuery and fancyBox files -->
+
+<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+
+<script type="text/javascript">
+    var $ = jQuery.noConflict();
+</script>
+
+<style>
+    /* Start state */
+    .animated-modal {
+        max-width: 550px;
+        border-radius: 4px;
+        overflow: hidden;
+        transform: translateY(-50px);
+        transition: all .7s;
+    }
+
+        .animated-modal h2,
+        .animated-modal p {
+            transform: translateY(-50px);
+            opacity: 0;
+            transition-property: transform, opacity;
+            transition-duration: .4s;
+        }
+
+    /* Final state */
+    .fancybox-slide--current .animated-modal,
+    .fancybox-slide--current .animated-modal h2,
+    .fancybox-slide--current .animated-modal p {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+        /* Reveal content with different delays */
+        .fancybox-slide--current .animated-modal h2 {
+            transition-delay: .1s;
+        }
+
+        .fancybox-slide--current .animated-modal p {
+            transition-delay: .3s;
+        }
+
+    .animated-modalnew {
+        max-width: 550px;
+        border-radius: 4px;
+        overflow: hidden;
+        transform: translateY(-50px);
+        transition: all .7s;
+    }
+
+        .animated-modalnew h2,
+        .animated-modalnew p {
+            transform: translateY(-50px);
+            opacity: 0;
+            transition-property: transform, opacity;
+            transition-duration: .4s;
+        }
+
+    /* Final state */
+    .fancybox-slide--current .animated-modalnew,
+    .fancybox-slide--current .animated-modalnew h2,
+    .fancybox-slide--current .animated-modalnew p {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+        /* Reveal content with different delays */
+        .fancybox-slide--current .animated-modalnew h2 {
+            transition-delay: .1s;
+        }
+
+        .fancybox-slide--current .animated-modalnew p {
+            transition-delay: .3s;
+        }
+</style>
+
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        /* Using custom settings */
+        $("a#inline").fancybox({
+            'hideOnContentClick': true
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    function Closefancy() {
+        $.fancybox.close();
+    }
+</script>
+
+@if (ViewBag.prdidmb != null && ViewBag.prdidwl != null)
+{
+    <script type="text/javascript">
+
+    function addComboProductToCart() {
+            var ids = [@ViewBag.prdidflag, @ViewBag.prdidflagshaft, @ViewBag.prdidqd, @ViewBag.prdidmb, @ViewBag.prdidwl];
+            var arrayOfStrings = ids.toString().split(',');
+            for (var i = 0; i < arrayOfStrings.length; i++) {
+                AjaxCart.addproducttocart_catalog('/addproducttocart/catalog/' + arrayOfStrings[i] + '/1/1', false);
+            }
+
+            window.location = '@webHelper.GetStoreLocation()CustomBuilder/ClearBuilderCart';
+
+            //window.location = '@webHelper.GetStoreLocation()cart?bldrdone';
+    } </script>
+
+}
+else if (ViewBag.prdidmb == null)
+{
+    <script type="text/javascript">
+
+     function addComboProductToCart() {
+        var ids = [@ViewBag.prdidflag, @ViewBag.prdidflagshaft, @ViewBag.prdidqd, @ViewBag.prdidwl];
+        var arrayOfStrings = ids.toString().split(',');
+        for (var i = 0; i < arrayOfStrings.length; i++)
+        {
+            AjaxCart.addproducttocart_catalog('/addproducttocart/catalog/' + arrayOfStrings[i] + '/1/1', false);
+        }
+
+        window.location = '@webHelper.GetStoreLocation()CustomBuilder/ClearBuilderCart';
+
+        //window.location = '@webHelper.GetStoreLocation()cart?bldrdone';
+    } </script>
+}
+else if (ViewBag.prdidwl == null)
+{
+    <script type="text/javascript">
+
+    function addComboProductToCart() {
+            var ids = [@ViewBag.prdidflag, @ViewBag.prdidflagshaft, @ViewBag.prdidqd, @ViewBag.prdidmb];
+            var arrayOfStrings = ids.toString().split(',');
+            for (var i = 0; i < arrayOfStrings.length; i++) {
+                AjaxCart.addproducttocart_catalog('/addproducttocart/catalog/' + arrayOfStrings[i] + '/1/1', false);
+            }
+
+            window.location = '@webHelper.GetStoreLocation()CustomBuilder/ClearBuilderCart';
+
+            //window.location = '@webHelper.GetStoreLocation()cart?bldrdone';
+    } </script>
+}
+else
+{
+    <script type="text/javascript">
+
+    function addComboProductToCart() {
+            var ids = [@ViewBag.prdidflag, @ViewBag.prdidflagshaft, @ViewBag.prdidqd];
+            var arrayOfStrings = ids.toString().split(',');
+            for (var i = 0; i < arrayOfStrings.length; i++) {
+                AjaxCart.addproducttocart_catalog('/addproducttocart/catalog/' + arrayOfStrings[i] + '/1/1', false);
+            }
+
+            window.location = '@webHelper.GetStoreLocation()CustomBuilder/ClearBuilderCart';
+
+            //window.location = '@webHelper.GetStoreLocation()cart?bldrdone';
+    } </script>
+
+}
+<script type="text/javascript">
+
+    function Displaywheep() {
+        //document.getElementById('pro_builds_drop_d').style.display = "block";
+        $('#pro_builds_drop_d').show();
+    }
+
+    function closeprosetup() {
+        $('#pro_builds_drop_d').hide();
+    }
+</script>
+
+<div class="main_wrap">
+    <div style="padding: 0;border-top-right-radius: 3px;border-top-left-radius: 3px;" class="main">
+        <div class="content_wrap">
+
+            <div class="deckbuilder_wrap load_builder">
+                <div class="deckbuilder_page">
+                    @if (usern == "admin")
+                    {
+                        <div id="statsumessage" class="db_title cf" style="margin:5px;"> <h1 class="text"> Product has added. </h1> </div>
+                    }
+                    <div class="db_title cf">
+                        <h1 class="text">Build Your Own Custom Whip  </h1>
+                        <div class="controls">
+                            <a data-fancybox data-animation-duration="700" data-src="#animatedModal" href="javascript:;" style="display:block;color: #ffffff;text-decoration: none;float: left;border-left: 1px solid #666666;padding: 0 35px 0 20px;width: 285px;text-align: left;position: relative;" class="btn">Exit Custom Builder</a>
+                            <div style="display: none;height: 280px;width: 640px;margin-top: -140px;margin-left: -320px;position: fixed;left: 50%;top: 50%;" id="animatedModal" class="animated-modal">
+                                <div class="db_formwrap db_warn" style="z-index: 1; position: relative;">
+                                    <div class="section">
+                                        <h2>Warning</h2>
+                                        <p style="margin-top: 20px;line-height: 1.7;" class="note">
+                                            If you exit the builder, your current build will be lost.<br>Are you sure you want to exit?
+                                        </p>
+                                    </div>
+                                    <div class="cf">
+                                        <button class="db_button ghost_btn ghost_accent cancel" style="color: #ce490f; padding: 13px 24px 12px; border-color: #ce490f; margin-top:20px;" onclick="Closefancy();">Return To Builder</button>
+                                        <a class="db_button ghost_btn ghost_primary confirm" style="margin-top:20px;" href='@webHelper.GetStoreLocation()CustomBuilder/ClearBuilder'>
+                                            Exit Builder
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="db_content">
+                        <div class="mainpage_components">
+                            <div class="mainpage_builds cf">
+                                <button class="pro_builds" onclick="Displaywheep();">Choose A Complete Whip</button>
+                            </div>
+                            <div class="cf">
+                                @if (ViewBag.prdidflag != null)
+                                {
+                                    x = ViewBag.prdidflag; y = ViewBag.prdimgflag; z = ViewBag.prdnameflag; sku = ViewBag.prdskuflag;
+                                    <div class="comp_cell" style="width:280px;" data-comptype="DECK">
+                                        <div class="comp_thumb_wrap"><img class="comp_thumb" src="@y" /></div>
+                                        <span class="name">
+                                            @z
+                                            <br>
+                                            <span class="subname"></span>
+                                        </span>
+                                        <div class="comp_controls">
+                                            <button class="edit" onclick="location.href='@webHelper.GetStoreLocation()flagc?bldr'">Edit</button>
+                                            <button class="details" onclick="location.href='@webHelper.GetStoreLocation()@sku?bldr'">Details</button>
+                                            <button class="remove" onclick="location.href='@webHelper.GetStoreLocation()CustomBuilder/Flag'">Remove</button>
+                                        </div>
+                                    </div>
+                                }
+                                else
+                                {
+                                    <div class="comp_cell deck first comp_ph" data-comptype="DECK">
+                                        <a href="@webHelper.GetStoreLocation()flagc?bldr" class="comp_link"><span class="comp_text_ph">+ Add Flag</span></a>
+                                    </div>
+                                }
+                                @if (ViewBag.prdidflagshaft != null)
+                                {
+                                    x = ViewBag.prdidflagshaft; y = ViewBag.prdimgflagshaft; z = ViewBag.prdnameflagshaft; sku = ViewBag.prdskuflagshaft;
+                                    <div class="comp_cell" style="width:280px;" data-comptype="DECK">
+                                        <div class="comp_thumb_wrap"><img class="comp_thumb" src="@y" /></div>
+                                        <span class="name">
+                                            @z
+                                            <br>
+                                            <span class="subname"></span>
+                                        </span>
+                                        <div class="comp_controls">
+                                            <button class="edit" onclick="location.href='@webHelper.GetStoreLocation()flag-shaft?bldrshaft'">Edit</button>
+                                            <button class="details" onclick="location.href='@webHelper.GetStoreLocation()@sku?bldrshaft'">Details</button>
+                                            <button class="remove" onclick="location.href='@webHelper.GetStoreLocation()CustomBuilder/FlagShaft'">Remove</button>
+                                        </div>
+                                    </div>
+                                }
+                                else
+                                {
+                                    <div class="comp_cell trucks comp_ph" data-comptype="TRUCKS">
+                                        <a href="@webHelper.GetStoreLocation()flag-shaft-2?bldrshaft" class="comp_link"><span class="comp_text_ph">+ Add Flag Shaft</span></a>
+                                    </div>
+                                }
+                                @if (ViewBag.prdidqd != null)
+                                {
+                                    x = ViewBag.prdidqd; y = ViewBag.prdimgqd; z = ViewBag.prdnameqd; sku = ViewBag.prdskuqd;
+                                    <div class="comp_cell" style="width:280px;" data-comptype="DECK">
+                                        <div class="comp_thumb_wrap"><img class="comp_thumb" src="@y" /></div>
+                                        <span class="name">
+                                            @z
+                                            <br>
+                                            <span class="subname"></span>
+                                        </span>
+                                        <div class="comp_controls">
+                                            <button class="edit" onclick="location.href='@webHelper.GetStoreLocation()quick-disconnect?qd'">Edit</button>
+                                            <button class="details" onclick="location.href='@webHelper.GetStoreLocation()@sku?qd'">Details</button>
+                                            <button class="remove" onclick="location.href='@webHelper.GetStoreLocation()CustomBuilder/Quickdis'">Remove</button>
+                                        </div>
+                                    </div>
+                                }
+                                else
+                                {
+                                    if (ViewBag.prdidflagshaft != null)
+                                    {
+                                        string[] flagshaftvaluestr = ViewBag.resultattrflagshaft.Split(',');
+                                        if (flagshaftvaluestr.Contains("1/2"))
+                                        {
+                                            <div class="comp_cell wheels comp_ph" data-comptype="WHEELS">
+                                                Based on your shaft diameter, it has value 1/2. So no need to Add QD, you can direct place order OR go to further selection.
+                                            </div>
+
+                                        }
+                                        else
+                                        {
+                                            <div class="comp_cell wheels comp_ph" data-comptype="WHEELS">
+                                                <a href="@webHelper.GetStoreLocation()quick-disconnectc?qd" class="comp_link" onclick="return Btnenable();"><span class="comp_text_ph">+ Add Quick Disconnect</span></a>
+                                            </div>}
+                                    }
+                                    else
+                                    {
+                                        <div class="comp_cell wheels comp_ph" data-comptype="WHEELS">
+                                            <a href="@webHelper.GetStoreLocation()quick-disconnectc?qd" class="comp_link" onclick="return Btnenable();"><span class="comp_text_ph">+ Add Quick Disconnect</span></a>
+                                        </div>
+
+                                    }
+                                }
+                                @if (ViewBag.prdidmb != null)
+                                {
+                                    x = ViewBag.prdidmb; y = ViewBag.prdimgmb; z = ViewBag.prdnamemb; sku = ViewBag.prdskumb;
+                                    <div class="comp_cell" style="width:280px;" data-comptype="DECK">
+                                        <div class="comp_thumb_wrap"><img class="comp_thumb" src="@y" /></div>
+                                        <span class="name">
+                                            @z
+                                            <br>
+                                            <span class="subname"></span>
+                                        </span>
+                                        <div class="comp_controls">
+                                            <button class="edit" onclick="location.href='@webHelper.GetStoreLocation()mounting-bracket?mb'">Edit</button>
+                                            <button class="details" onclick="location.href='@webHelper.GetStoreLocation()@sku?mb'">Details</button>
+                                            <button class="remove" onclick="location.href='@webHelper.GetStoreLocation()CustomBuilder/Mountingbr'">Remove</button>
+                                        </div>
+                                    </div>
+                                }
+                                else
+                                {
+                                    <div class="comp_cell bearings first comp_ph" data-comptype="BEARINGS">
+                                        <a href="@webHelper.GetStoreLocation()mounting-bracketc?mb" class="comp_link"><span class="riser_optional">Optional</span><span class="comp_text_ph">+ Add Mounting Bracket</span></a>
+                                    </div>
+                                }
+                                @if (ViewBag.prdidwl != null)
+                                {
+                                    x = ViewBag.prdidwl; y = ViewBag.prdimgwl; z = ViewBag.prdnamewl; sku = ViewBag.prdskuwl;
+                                    <div class="comp_cell" style="width:280px;" data-comptype="DECK">
+                                        <div class="comp_thumb_wrap"><img class="comp_thumb" src="@y" /></div>
+                                        <span class="name">
+                                            @z
+                                            <br>
+                                            <span class="subname"></span>
+                                        </span>
+                                        <div class="comp_controls">
+                                            <button class="edit" onclick="location.href='@webHelper.GetStoreLocation()whip-lighting?wl'">Edit</button>
+                                            <button class="details" onclick="location.href='@webHelper.GetStoreLocation()@sku?wl'">Details</button>
+                                            <button class="remove" onclick="location.href='@webHelper.GetStoreLocation()CustomBuilder/Whiplight'">Remove</button>
+                                        </div>
+                                    </div>
+                                }
+                                else
+                                {
+                                    <div class="comp_cell risers comp_ph" data-comptype="RISERS">
+                                        <a href="@webHelper.GetStoreLocation()whip-lightingc?wl" class="comp_link"><span class="riser_optional">Optional</span><span class="comp_text_ph">+ Add Whip lighting</span></a>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                        <div class="mainpage_totals">
+                            <div class="mainpage_summary">
+                                <h2 class="text">My Complete</h2>
+                                <a data-fancybox data-animation-duration="700" data-src="#animated-modalnew" href="javascript:;" class="clear_button">
+                                    Exit Custom Builder
+                                </a>
+
+                                <div style="display: none;height: 280px;width: 640px;margin-top: -140px;margin-left: -320px;position: fixed;left: 50%;top: 50%;" id="animated-modalnew" class="animated-modalnew">
+                                    <div class="db_formwrap db_warn" style="z-index: 1; position: relative;">
+                                        <div class="section">
+                                            <h2>Warning</h2>
+                                            <p style="margin-top: 20px;line-height: 1.7;" class="note">
+                                                This will remove all components from your build.<br>Are you sure you want to do that?
+                                            </p>
+                                        </div>
+                                        <div class="cf">
+                                            <button class="db_button ghost_btn ghost_accent cancel" style="color: #ce490f; padding: 13px 24px 12px; border-color: #ce490f; margin-top:20px;" onclick="Closefancy();">Cancel</button>
+                                            <button class="db_button ghost_btn ghost_primary confirm" style="margin-top:20px;" onclick="location.href='@webHelper.GetStoreLocation()CustomBuilder/ClearBuilder'">Clear Builder</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                            <div class="mainpage_itemized">
+                                <div style="padding: 0 0 10px;margin: 0 20px;" id="db_buildlabel">
+                                    <h3 style="margin: 20px 0 0;padding: 0;font-size: 18px;color: #8e8e8e;font-weight: 400;text-transform: capitalize;">Custom Setup</h3>
+                                </div>
+                                @if (ViewBag.prdidflag != null)
+                                {
+                                    <button data-comptype="DECK" class="comp_line deck selected" style="color:#000000; font-weight:500;">Flag <span class="price">@ViewBag.prdpriceflag</span></button>
+                                }
+                                else
+                                {
+                                    <button data-comptype="DECK" class="comp_line deck">Flag <span class="price"></span></button>
+                                }
+                                @if (ViewBag.prdidflagshaft != null)
+                                {
+                                    <button data-comptype="TRUCKS" class="comp_line deck selected" style="color:#000000; font-weight:500;">Flag Shaft <span class="price">@ViewBag.prdpriceflagshaft</span></button>
+                                }
+                                else
+                                {
+                                    <button data-comptype="TRUCKS" class="comp_line trucks">Flag Shaft <span class="price"></span></button>
+                                }
+                                @if (ViewBag.prdidqd != null)
+                                {
+                                    <button data-comptype="WHEELS" class="comp_line deck selected" style="color:#000000; font-weight:500;">Quick Disconnect <span class="price">@ViewBag.prdpriceqd</span></button>
+                                }
+                                else
+                                {
+                                    <button data-comptype="WHEELS" class="comp_line wheels">Quick Disconnect <span class="price"></span></button>
+                                }
+                                @if (ViewBag.prdidmb != null)
+                                {
+                                    <button data-comptype="BEARINGS" class="comp_line deck selected" style="color:#000000; font-weight:500;">Mounting Bracket <span class="price">@ViewBag.prdpricemb</span></button>
+                                }
+                                else
+                                {
+                                    <button data-comptype="BEARINGS" class="comp_line bearings">Mounting Bracket <span class="price"></span></button>
+                                }
+                                @if (ViewBag.prdidwl != null)
+                                {
+                                    <button data-comptype="RISERS" class="comp_line deck selected" style="color:#000000; font-weight:500;">Whip Lighting <span class="price">@ViewBag.prdpricewl</span></button>
+                                }
+                                else
+                                {
+                                    <button data-comptype="RISERS" class="comp_line risers">Whip Lighting <span class="price"></span></button>
+                                }
+
+                                <div class="db_totalwrap">
+                                    @if (ViewBag.prdpriceflag != null)
+                                    {
+                                        Total = ViewBag.prdpriceflag;
+                                    }
+                                    @if (ViewBag.prdpriceflagshaft != null)
+                                    {
+                                        n1 = Double.Parse(ViewBag.prdpriceflag.Substring(1));
+                                        n2 = Double.Parse(ViewBag.prdpriceflagshaft.Substring(1));
+                                        n3 = n1 + n2;
+                                        Total = "$" + n3.ToString();
+
+                                    }
+                                    @if (ViewBag.prdidqd != null)
+                                    {
+                                        n1 = Double.Parse(ViewBag.prdpriceflag.Substring(1));
+                                        n2 = Double.Parse(ViewBag.prdpriceflagshaft.Substring(1));
+                                        n3 = Double.Parse(ViewBag.prdpriceqd.Substring(1));
+                                        n4 = n1 + n2 + n3;
+                                        Total = "$" + n4.ToString();
+
+                                    }
+                                    @if (ViewBag.prdidmb != null)
+                                    {
+                                        n1 = Double.Parse(ViewBag.prdpriceflag.Substring(1));
+                                        n2 = Double.Parse(ViewBag.prdpriceflagshaft.Substring(1));
+                                        n3 = Double.Parse(ViewBag.prdpriceqd.Substring(1));
+                                        n4 = Double.Parse(ViewBag.prdpricemb.Substring(1));
+                                        n5 = n1 + n2 + n3 + n4;
+                                        Total = "$" + n5.ToString();
+                                    }
+                                    @if (ViewBag.prdidwl != null)
+                                    {
+                                        n1 = Double.Parse(ViewBag.prdpriceflag.Substring(1));
+                                        n2 = Double.Parse(ViewBag.prdpriceflagshaft.Substring(1));
+                                        n3 = Double.Parse(ViewBag.prdpriceqd.Substring(1));
+                                        n4 = Double.Parse(ViewBag.prdpricemb.Substring(1));
+                                        n5 = Double.Parse(ViewBag.prdpricewl.Substring(1));
+                                        n6 = n1 + n2 + n3 + n4 + n5;
+                                        Total = "$" + n6.ToString();
+                                    }
+                                    <div class="build_subtotal">Subtotal <span class="price">@Total</span></div>
+                                    @if (Total == "$0")
+                                    {
+                                        <div class="build_savings">Savings <span class="price">$0.0</span></div>
+                                    }
+                                    else
+                                    {
+                                        Double value1 = (Double.Parse(Total.Substring(1)) * 10.00) / 100.00;
+                                        var value = String.Format("{0:0.00}", value1);
+                                        discount = "$" + value.ToString();
+                                        <div class="build_savings">Savings <span class="price">-@discount</span></div>
+                                    }
+                                </div>
+                                @if (Total == "$0")
+                                {
+                                    <div class="build_total">Total <span class="price">$0.0</span></div>
+                                }
+                                else
+                                {
+                                    Double value2 = (Double.Parse(Total.Substring(1)) - Double.Parse(discount.Substring(1)));
+                                    var value = String.Format("{0:0.00}", value2);
+                                    var Totalprice = "$" + value.ToString();
+                                    <div class="build_total">Total <span class="price">@Totalprice</span></div>
+                                }
+                                @if (ViewBag.prdidqd != null && ViewBag.prdidflag != null && ViewBag.prdidflagshaft != null)
+                                {
+                                    <input id="Button" type="button" style="height: 40px;min-width: 125px;text-align: center;color: #fff;background-color: #4ab2f1;margin-left: 21px;" value="ADD TO CART" onclick="addComboProductToCart();" />
+                                }
+                                else
+                                {
+                                    <input id="Button" disabled type="button" style="height: 40px;min-width: 125px;text-align: center;color: #fff;background-color: #4ab2f1;margin-left: 21px;" value="ADD TO CART" onclick="addComboProductToCart();" />}
+
+                                @if (workContext.CurrentCustomer.IsAdmin())
+                                {
+                                    @if (ViewBag.prdidqd != null && ViewBag.prdidflag != null && ViewBag.prdidflagshaft != null && ViewBag.prdidqd != null && ViewBag.prdidmb != null)
+                                    {
+                                        <input id="Button" type="button" style="height: 40px;min-width: 125px;text-align: center;color: #fff;background-color: #4ab2f1;margin-left: 21px;margin-top:20px;" value="SAVE AS CUSTOM WHEEP" onclick="location.href='@webHelper.GetStoreLocation()CustomBuilder/SaveCustomWheepAdmin'" />
+                                    }
+                                    else
+                                    {
+                                        <input id="Button" disabled type="button" style="height: 40px;min-width: 125px;text-align: center;color: #fff;background-color: #4ab2f1;margin-left: 21px;margin-top:20px;" value="SAVE AS CUSTOM WHEEP" />
+                                    }
+                                }
+                                else
+                                {
+                                    <input id="Button" disabled type="button" style="height: 40px;min-width: 125px;text-align: center;color: #fff;background-color: #4ab2f1;margin-left: 21px;margin-top:20px;" value="SAVE AS CUSTOM WHEEP" />
+                                }
+                            </div>
+                        </div>
+                        <div class="pro_builds_drop" id="pro_builds_drop_d" style="display:none;">
+                            @Html.Partial("Prddetil")
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /content_wrap -->
+    </div><!-- /main -->
+</div>

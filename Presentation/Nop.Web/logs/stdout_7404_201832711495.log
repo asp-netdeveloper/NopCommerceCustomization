@@ -1,0 +1,1687 @@
+Hosting environment: Development
+Content root path: C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web
+Now listening on: http://localhost:19202
+Application started. Press Ctrl+C to shut down.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.HomeController.Index (Nop.Web) with arguments ((null)) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.HomeController.Index (Nop.Web) in 26285.08ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 28724.538ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 69
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Messages.QueuedMessagesSendTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 442.3336ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 673.9055ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/custombuilder-2  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.TopicController.TopicDetails (Nop.Web) with arguments (13) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Topic/TopicDetails.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.TopicController.TopicDetails (Nop.Web) in 884.5589ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 1236.3792ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/CustomBuilder  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CustomBuilderController.Index (Nop.Web) with arguments ((null)) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/CustomBuilder/Index.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CustomBuilderController.Index (Nop.Web) in 3050.9886ms
+info: Microsoft.AspNetCore.Session.DistributedSession[3]
+      Session started; Key:3e43e5dd-c0a5-27ca-3a74-dafdffc74ea1, Id:a6915e49-69b5-f664-2e6d-4cb57e7a4e78
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/srcset=%22https:/img.skatewarehouse.com/framework16/images/pros/2x/BARL.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 3321.1194ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 367.9153ms 404 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/CustomBuilder/Prddetil/117  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CustomBuilderController.Prddetil (Nop.Web) with arguments (117) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.RedirectToActionResult[1]
+      Executing RedirectResult, redirecting to /CustomBuilder?prdidflag=67&prdnameflag=Fake%20product%202%20-%2012%22%20x%2018%22%20flag&prdpriceflag=19.99&prdidflagshaft=72&prdnameflagshaft=8%27%20electrical%20shaft&prdpriceflagshaft=79.99&prdidqd=78&prdnameqd=Electrical%20quick%20disconnect%20-%20Standard&prdpriceqd=15.00&prdidmb=81&prdnamemb=L%20bracket&prdpricemb=4.99&prdidwl=82&prdnamewl=1156%2012%20Light%20perfect&prdskuwl=test&prdpricewl=55.00.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CustomBuilderController.Prddetil (Nop.Web) in 1255.734ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 1424.8471ms 302 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/CustomBuilder?prdidflag=67&prdnameflag=Fake%20product%202%20-%2012%22%20x%2018%22%20flag&prdpriceflag=19.99&prdidflagshaft=72&prdnameflagshaft=8%27%20electrical%20shaft&prdpriceflagshaft=79.99&prdidqd=78&prdnameqd=Electrical%20quick%20disconnect%20-%20Standard&prdpriceqd=15.00&prdidmb=81&prdnamemb=L%20bracket&prdpricemb=4.99&prdidwl=82&prdnamewl=1156%2012%20Light%20perfect&prdskuwl=test&prdpricewl=55.00  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CustomBuilderController.Index (Nop.Web) with arguments ((null)) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/CustomBuilder/Index.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CustomBuilderController.Index (Nop.Web) in 4866.8119ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 5128.9335ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/images/thumbs/default-image_550.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/srcset=%22https:/img.skatewarehouse.com/framework16/images/pros/2x/BARL.png  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /images/thumbs/default-image_550.png was not modified
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 233.667ms 304 image/png
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 288.3155ms 404 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 69
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Messages.QueuedMessagesSendTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 128.861ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 324.1729ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 69
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Messages.QueuedMessagesSendTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 130.8312ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 298.0866ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/CustomBuilder/ClearBuilder  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CustomBuilderController.ClearBuilder (Nop.Web) with arguments ((null)) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.RedirectToActionResult[1]
+      Executing RedirectResult, redirecting to /CustomBuilder.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CustomBuilderController.ClearBuilder (Nop.Web) in 61.4585ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 241.3361ms 302 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/CustomBuilder  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CustomBuilderController.Index (Nop.Web) with arguments ((null)) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/CustomBuilder/Index.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CustomBuilderController.Index (Nop.Web) in 508.1963ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 739.2656ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/srcset=%22https:/img.skatewarehouse.com/framework16/images/pros/2x/BARL.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 207.2854ms 404 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/flagc?bldr  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CatalogController.Category (Nop.Web) with arguments (45, Nop.Web.Models.Catalog.CatalogPagingFilteringModel) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Catalog/CategoryTemplate.ProductsInGridOrLines.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CatalogController.Category (Nop.Web) in 6536.8589ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 6804.3837ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/images/thumbs/default-image_450.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/view-list.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/images/thumbs/0000091_aces-and-8s-perfect_415.jpeg  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /images/thumbs/default-image_450.png was not modified
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/view-grid.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 113.4417ms 304 image/png
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /images/thumbs/0000091_aces-and-8s-perfect_415.jpeg was not modified
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /DefaultClean/Content/images/view-list.png was not modified
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 142.512ms 304 image/png
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /DefaultClean/Content/images/view-grid.png was not modified
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 156.0166ms 304 image/jpeg
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 129.834ms 304 image/png
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/3-x-5-3?bldr  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CatalogController.Category (Nop.Web) with arguments (46, Nop.Web.Models.Catalog.CatalogPagingFilteringModel) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Catalog/CategoryTemplate.ProductsInGridOrLines.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CatalogController.Category (Nop.Web) in 588.0397ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 767.7099ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/images/thumbs/default-image_415.png  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /images/thumbs/default-image_415.png was not modified
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 23.4957ms 304 image/png
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/CustomBuilder?prdidflag=65&prdimgflag=http%3A%2F%2Flocalhost%3A15536%2Fimages%2Fthumbs%2F0000091_aces-and-8s-perfect_415.jpeg&prdnameflag=Aces%20and%208%27s%20perfect&prdskuflag=aces-and-8s-perfect&prdpriceflag=$17.96  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CustomBuilderController.Index (Nop.Web) with arguments ((null)) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/CustomBuilder/Index.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CustomBuilderController.Index (Nop.Web) in 225.5667ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 466.1568ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/srcset=%22https:/img.skatewarehouse.com/framework16/images/pros/2x/BARL.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 209.4244ms 404 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/flag-shaft-2?bldrshaft  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CatalogController.Category (Nop.Web) with arguments (51, Nop.Web.Models.Catalog.CatalogPagingFilteringModel) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Catalog/CategoryTemplate.ProductsInGridOrLines.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CatalogController.Category (Nop.Web) in 586.6596ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 778.5839ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/images/thumbs/0000095_heavy-duty-livewire_415.jpeg  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /images/thumbs/0000095_heavy-duty-livewire_415.jpeg was not modified
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 9.6898ms 304 image/jpeg
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/fully-lit-2?bldrshaft  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CatalogController.Category (Nop.Web) with arguments (52, Nop.Web.Models.Catalog.CatalogPagingFilteringModel) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Catalog/CategoryTemplate.ProductsInGridOrLines.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CatalogController.Category (Nop.Web) in 511.7965ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 679.7863ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/images/thumbs/0000094_livewire_415.jpeg  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /images/thumbs/0000094_livewire_415.jpeg was not modified
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 10.1018ms 304 image/jpeg
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 69
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Messages.QueuedMessagesSendTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 390.787ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 625.4856ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 58
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Common.KeepAliveTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/keepalive/index  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 2.3175ms 200 
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 498.9369ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 646.0709ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 69
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Messages.QueuedMessagesSendTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 117.4157ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 309.3079ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 69
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Messages.QueuedMessagesSendTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 96.8179ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 250.6125ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 69
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Messages.QueuedMessagesSendTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 164.3042ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 327.5039ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/fully-lit-2?bldrshaft  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CatalogController.Category (Nop.Web) with arguments (52, Nop.Web.Models.Catalog.CatalogPagingFilteringModel) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Catalog/CategoryTemplate.ProductsInGridOrLines.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CatalogController.Category (Nop.Web) in 877.3419ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 1072.7157ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/jquery-ui-themes/smoothness/jquery-ui-1.10.3.custom.min.css  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/css/styles.css  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/jquery-1.10.2.min.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery-ui-themes/smoothness/jquery-ui-1.10.3.custom.min.css'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\lib\jquery-ui-themes\smoothness\jquery-ui-1.10.3.custom.min.css'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/css/styles.css'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\css\styles.css'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery-1.10.2.min.js'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\lib\jquery-1.10.2.min.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 42.6542ms 200 text/css
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/jquery.validate.min.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/jquery-ui-1.10.3.custom.min.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery.validate.min.js'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\lib\jquery.validate.min.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/js/public.ajaxcart.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/js/public.common.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 205.001ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 239.7189ms 200 text/css
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery-ui-1.10.3.custom.min.js'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\lib\jquery-ui-1.10.3.custom.min.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/js/public.ajaxcart.js'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\js\public.ajaxcart.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/js/public.common.js'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\js\public.common.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 161.8725ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/jquery-migrate-1.2.1.min.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/jquery.validate.unobtrusive.min.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 135.79ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 143.8728ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/shopping-bag.png  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/shopping-bag.png'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\shopping-bag.png'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery-migrate-1.2.1.min.js'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\lib\jquery-migrate-1.2.1.min.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/view-list.png  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery.validate.unobtrusive.min.js'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\lib\jquery.validate.unobtrusive.min.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 113.0112ms 200 image/png
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 201.7969ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/view-list.png'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\view-list.png'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 217.9876ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/logo.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/view-grid.png  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/logo.png'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\logo.png'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 148.2418ms 200 image/png
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/view-grid.png'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\view-grid.png'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/compare-button.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/images/thumbs/0000095_heavy-duty-livewire_415.jpeg  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/images/thumbs/0000095_heavy-duty-livewire_415.jpeg'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\images\thumbs\0000095_heavy-duty-livewire_415.jpeg'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/images/thumbs/0000094_livewire_415.jpeg  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 147.003ms 200 image/png
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 159.439ms 200 image/png
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/compare-button.png'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\compare-button.png'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/images/thumbs/0000094_livewire_415.jpeg'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\images\thumbs\0000094_livewire_415.jpeg'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 567.1734ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 154.6124ms 200 image/jpeg
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/rating1.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 221.8672ms 200 image/png
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/rating1.png'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\rating1.png'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/wishlist-button.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 145.9186ms 200 image/png
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/ajax-loader-small.gif  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/rating2.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 347.5422ms 200 image/jpeg
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/ajax-loader-small.gif'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\ajax-loader-small.gif'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/wishlist-button.png'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\wishlist-button.png'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/jquery-ui-themes/smoothness/images/ui-bg_flat_75_ffffff_40x100.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/social-sprite.png  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/rating2.png'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\rating2.png'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 99.4104ms 200 image/gif
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/loading.gif  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery-ui-themes/smoothness/images/ui-bg_flat_75_ffffff_40x100.png'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\lib\jquery-ui-themes\smoothness\images\ui-bg_flat_75_ffffff_40x100.png'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 226.4291ms 200 image/png
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/social-sprite.png'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\social-sprite.png'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 169.6545ms 200 image/png
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/loading.gif'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\loading.gif'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 142.7726ms 200 image/png
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 181.1802ms 200 image/png
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 101.2579ms 200 image/gif
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/favicon.ico  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\favicon.ico'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 19.8751ms 200 image/x-icon
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 69
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Messages.QueuedMessagesSendTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 94.9126ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 238.3218ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/fully-lit-2?bldrshaft  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CatalogController.Category (Nop.Web) with arguments (52, Nop.Web.Models.Catalog.CatalogPagingFilteringModel) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Catalog/CategoryTemplate.ProductsInGridOrLines.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CatalogController.Category (Nop.Web) in 711.9215ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 929.2302ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/css/styles.css  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/jquery-ui-themes/smoothness/jquery-ui-1.10.3.custom.min.css  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/jquery-1.10.2.min.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/css/styles.css'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\css\styles.css'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery-ui-themes/smoothness/jquery-ui-1.10.3.custom.min.css'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\lib\jquery-ui-themes\smoothness\jquery-ui-1.10.3.custom.min.css'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 51.0592ms 200 text/css
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery-1.10.2.min.js'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\lib\jquery-1.10.2.min.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 87.2458ms 200 text/css
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 64.7095ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/jquery.validate.min.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery.validate.min.js'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\lib\jquery.validate.min.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 16.3477ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/jquery-ui-1.10.3.custom.min.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/jquery.validate.unobtrusive.min.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/js/public.common.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/jquery-migrate-1.2.1.min.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery.validate.unobtrusive.min.js'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\lib\jquery.validate.unobtrusive.min.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery-ui-1.10.3.custom.min.js'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\lib\jquery-ui-1.10.3.custom.min.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/js/public.common.js'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\js\public.common.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/js/public.ajaxcart.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 65.0308ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/js/public.ajaxcart.js'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\js\public.ajaxcart.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 115.4704ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/logo.png  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/logo.png'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\logo.png'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery-migrate-1.2.1.min.js'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\lib\jquery-migrate-1.2.1.min.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/images/thumbs/0000095_heavy-duty-livewire_415.jpeg  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 176.6239ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/view-grid.png  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/view-grid.png'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\view-grid.png'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 40.6579ms 200 image/png
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 165.8688ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/view-list.png  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/view-list.png'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\view-list.png'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/images/thumbs/0000094_livewire_415.jpeg  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/images/thumbs/0000094_livewire_415.jpeg'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\images\thumbs\0000094_livewire_415.jpeg'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 171.7108ms 200 image/png
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/images/thumbs/0000095_heavy-duty-livewire_415.jpeg'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\images\thumbs\0000095_heavy-duty-livewire_415.jpeg'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 174.6272ms 200 image/jpeg
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 120.1853ms 200 image/png
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/rating1.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 129.8019ms 200 image/jpeg
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/rating2.png  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/rating2.png'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\rating2.png'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/rating1.png'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\rating1.png'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/compare-button.png  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/compare-button.png'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\compare-button.png'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 87.034ms 200 image/png
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/wishlist-button.png  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/wishlist-button.png'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\wishlist-button.png'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 120.7977ms 200 image/png
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 78.3047ms 200 image/png
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/shopping-bag.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/ajax-loader-small.gif  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/social-sprite.png  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/shopping-bag.png'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\shopping-bag.png'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/social-sprite.png'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\social-sprite.png'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 43.3614ms 200 image/png
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 108.5724ms 200 image/png
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 650.9953ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/loading.gif  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/ajax-loader-small.gif'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\ajax-loader-small.gif'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/loading.gif'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\loading.gif'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 137.0027ms 200 image/png
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 50.0212ms 200 image/gif
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 168.7177ms 200 image/gif
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/jquery-ui-themes/smoothness/images/ui-bg_flat_75_ffffff_40x100.png  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery-ui-themes/smoothness/images/ui-bg_flat_75_ffffff_40x100.png'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\lib\jquery-ui-themes\smoothness\images\ui-bg_flat_75_ffffff_40x100.png'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 20.6774ms 200 image/png
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/favicon.ico  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\favicon.ico'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 21.2268ms 200 image/x-icon
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 69
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Messages.QueuedMessagesSendTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 115.333ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 372.8518ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 64
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Customers.DeleteGuestsTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 346.383ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 437.251ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 58
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Common.KeepAliveTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/keepalive/index  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 3.5288ms 200 
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 114.6008ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 297.2476ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 69
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Messages.QueuedMessagesSendTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 75.8863ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 307.8716ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/fully-lit-2?bldrshaft  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CatalogController.Category (Nop.Web) with arguments (52, Nop.Web.Models.Catalog.CatalogPagingFilteringModel) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Catalog/CategoryTemplate.ProductsInGridOrLines.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CatalogController.Category (Nop.Web) in 1012.399ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 1208.9233ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/jquery-1.10.2.min.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/jquery-ui-themes/smoothness/jquery-ui-1.10.3.custom.min.css  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/css/styles.css  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery-1.10.2.min.js'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\lib\jquery-1.10.2.min.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery-ui-themes/smoothness/jquery-ui-1.10.3.custom.min.css'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\lib\jquery-ui-themes\smoothness\jquery-ui-1.10.3.custom.min.css'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 26.2698ms 200 text/css
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 116.0987ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/css/styles.css'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\css\styles.css'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/jquery.validate.min.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery.validate.min.js'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\lib\jquery.validate.min.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 33.9876ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/jquery.validate.unobtrusive.min.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 199.0794ms 200 text/css
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery.validate.unobtrusive.min.js'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\lib\jquery.validate.unobtrusive.min.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 39.4742ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/jquery-ui-1.10.3.custom.min.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/js/public.ajaxcart.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/jquery-migrate-1.2.1.min.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/logo.png  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery-ui-1.10.3.custom.min.js'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\lib\jquery-ui-1.10.3.custom.min.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/js/public.ajaxcart.js'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\js\public.ajaxcart.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/js/public.common.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/images/thumbs/0000094_livewire_415.jpeg  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/images/thumbs/0000094_livewire_415.jpeg'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\images\thumbs\0000094_livewire_415.jpeg'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery-migrate-1.2.1.min.js'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\lib\jquery-migrate-1.2.1.min.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 184.5799ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/logo.png'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\logo.png'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 214.9756ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 233.7908ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 291.4993ms 200 image/jpeg
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/js/public.common.js'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\js\public.common.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/view-grid.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 514.0567ms 200 image/png
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/view-list.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/images/thumbs/0000095_heavy-duty-livewire_415.jpeg  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/shopping-bag.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/ajax-loader-small.gif  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/ajax-loader-small.gif'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\ajax-loader-small.gif'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/view-grid.png'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\view-grid.png'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/images/thumbs/0000095_heavy-duty-livewire_415.jpeg'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\images\thumbs\0000095_heavy-duty-livewire_415.jpeg'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/shopping-bag.png'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\shopping-bag.png'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 124.1132ms 200 image/png
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/view-list.png'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\view-list.png'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 374.9002ms 200 image/jpeg
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 481.9491ms 200 image/png
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 955.6994ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 456.3827ms 200 image/png
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/rating1.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/compare-button.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/wishlist-button.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/loading.gif  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 522.8578ms 200 image/gif
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/compare-button.png'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\compare-button.png'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/social-sprite.png  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/rating1.png'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\rating1.png'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/loading.gif'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\loading.gif'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/wishlist-button.png'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\wishlist-button.png'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 103.0129ms 200 image/png
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/rating2.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 122.8865ms 200 image/png
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/rating2.png'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\rating2.png'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/social-sprite.png'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\social-sprite.png'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/jquery-ui-themes/smoothness/images/ui-bg_flat_75_ffffff_40x100.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 214.5376ms 200 image/gif
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 251.6591ms 200 image/png
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 125.351ms 200 image/png
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery-ui-themes/smoothness/images/ui-bg_flat_75_ffffff_40x100.png'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\lib\jquery-ui-themes\smoothness\images\ui-bg_flat_75_ffffff_40x100.png'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 221.2181ms 200 image/png
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 143.601ms 200 image/png
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 69
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Messages.QueuedMessagesSendTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 108.6241ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 333.2866ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 69
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Messages.QueuedMessagesSendTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 97.1124ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 341.0244ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 69
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Messages.QueuedMessagesSendTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 114.9452ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 340.7978ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 69
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Messages.QueuedMessagesSendTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 267.3288ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 523.4646ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 58
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Common.KeepAliveTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/keepalive/index  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 3.2732ms 200 
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 167.4154ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 348.7882ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 69
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Messages.QueuedMessagesSendTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 63.8584ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 267.9212ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 69
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Messages.QueuedMessagesSendTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 140.1676ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 379.0483ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 69
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Messages.QueuedMessagesSendTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 160.5132ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 409.5554ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 69
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Messages.QueuedMessagesSendTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 162.4714ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 399.2784ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 69
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Messages.QueuedMessagesSendTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 1600.9545ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 1847.6326ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 64
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Customers.DeleteGuestsTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 58
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Common.KeepAliveTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 2471.5766ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 2610.3676ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/keepalive/index  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 22.3818ms 200 
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 1655.5562ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 1855.5399ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 69
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Messages.QueuedMessagesSendTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 2036.7734ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 2176.6635ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 69
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Messages.QueuedMessagesSendTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 113.9774ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 263.7066ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 69
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Messages.QueuedMessagesSendTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 101.4753ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 260.0229ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/fully-lit-2?bldrshaft  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CatalogController.Category (Nop.Web) with arguments (52, Nop.Web.Models.Catalog.CatalogPagingFilteringModel) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Catalog/CategoryTemplate.ProductsInGridOrLines.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CatalogController.Category (Nop.Web) in 657.6653ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 877.2271ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/fully-lit-2?bldrshaft  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CatalogController.Category (Nop.Web) with arguments (52, Nop.Web.Models.Catalog.CatalogPagingFilteringModel) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Catalog/CategoryTemplate.ProductsInGridOrLines.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CatalogController.Category (Nop.Web) in 1274.6387ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 1440.4706ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 69
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Messages.QueuedMessagesSendTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 88.4579ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 301.5392ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 69
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Messages.QueuedMessagesSendTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 101.9334ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 384.4878ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 58
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Common.KeepAliveTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/keepalive/index  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 2.0468ms 200 
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 131.1718ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 365.2893ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 69
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Messages.QueuedMessagesSendTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 64.9583ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 196.0856ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 69
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Messages.QueuedMessagesSendTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 130.2803ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 328.5717ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 69
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Messages.QueuedMessagesSendTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 162.326ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 419.3302ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 69
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Messages.QueuedMessagesSendTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 104.0901ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 333.0702ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/fully-lit-2?bldrshaft  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CatalogController.Category (Nop.Web) with arguments (52, Nop.Web.Models.Catalog.CatalogPagingFilteringModel) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Catalog/CategoryTemplate.ProductsInGridOrLines.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CatalogController.Category (Nop.Web) in 998.7943ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 1240.7602ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/jquery-ui-themes/smoothness/jquery-ui-1.10.3.custom.min.css  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery-ui-themes/smoothness/jquery-ui-1.10.3.custom.min.css'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\lib\jquery-ui-themes\smoothness\jquery-ui-1.10.3.custom.min.css'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/css/styles.css  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/jquery-1.10.2.min.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/css/styles.css'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\css\styles.css'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery-1.10.2.min.js'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\lib\jquery-1.10.2.min.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 125.2754ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 173.7086ms 200 text/css
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 217.8996ms 200 text/css
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/jquery.validate.min.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery.validate.min.js'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\lib\jquery.validate.min.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 40.8758ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/js/public.common.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/jquery.validate.unobtrusive.min.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/js/public.ajaxcart.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/jquery-migrate-1.2.1.min.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/js/public.ajaxcart.js'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\js\public.ajaxcart.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery.validate.unobtrusive.min.js'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\lib\jquery.validate.unobtrusive.min.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/js/public.common.js'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\js\public.common.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery-migrate-1.2.1.min.js'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\lib\jquery-migrate-1.2.1.min.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 81.4428ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 100.2818ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 226.735ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/jquery-ui-1.10.3.custom.min.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery-ui-1.10.3.custom.min.js'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\lib\jquery-ui-1.10.3.custom.min.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 299.3152ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/logo.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/wishlist-button.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/rating1.png  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/wishlist-button.png'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\wishlist-button.png'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/rating1.png'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\rating1.png'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/logo.png'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\logo.png'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 86.4038ms 200 image/png
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/shopping-bag.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/compare-button.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 142.0495ms 200 image/png
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/compare-button.png'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\compare-button.png'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/rating2.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 200.7117ms 200 image/png
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/shopping-bag.png'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\shopping-bag.png'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 412.7018ms 200 image/png
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 364.4238ms 200 image/png
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/images/thumbs/0000095_heavy-duty-livewire_415.jpeg  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/images/thumbs/0000094_livewire_415.jpeg  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/rating2.png'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\rating2.png'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/social-sprite.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 355.7387ms 200 image/png
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/ajax-loader-small.gif  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/images/thumbs/0000095_heavy-duty-livewire_415.jpeg'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\images\thumbs\0000095_heavy-duty-livewire_415.jpeg'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 267.5104ms 200 image/jpeg
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/images/thumbs/0000094_livewire_415.jpeg'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\images\thumbs\0000094_livewire_415.jpeg'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/social-sprite.png'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\social-sprite.png'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 900.9328ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/ajax-loader-small.gif'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\ajax-loader-small.gif'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 98.1338ms 200 image/gif
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/view-list.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/loading.gif  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/view-grid.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/jquery-ui-themes/smoothness/images/ui-bg_flat_75_ffffff_40x100.png  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/loading.gif'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\loading.gif'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/view-list.png'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\view-list.png'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/view-grid.png'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\view-grid.png'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 594.5243ms 200 image/png
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 281.499ms 200 image/png
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery-ui-themes/smoothness/images/ui-bg_flat_75_ffffff_40x100.png'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\lib\jquery-ui-themes\smoothness\images\ui-bg_flat_75_ffffff_40x100.png'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 435.1924ms 200 image/gif
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 508.2994ms 200 image/png
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 289.1345ms 200 image/png
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 858.6682ms 200 image/jpeg
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/fully-lit-2?bldrshaft  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CatalogController.Category (Nop.Web) with arguments (52, Nop.Web.Models.Catalog.CatalogPagingFilteringModel) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Catalog/CategoryTemplate.ProductsInGridOrLines.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CatalogController.Category (Nop.Web) in 383.0775ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 731.9964ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/css/styles.css  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/jquery-ui-themes/smoothness/jquery-ui-1.10.3.custom.min.css  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/jquery-1.10.2.min.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery-ui-themes/smoothness/jquery-ui-1.10.3.custom.min.css'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\lib\jquery-ui-themes\smoothness\jquery-ui-1.10.3.custom.min.css'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 108.3473ms 200 text/css
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/css/styles.css'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\css\styles.css'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 191.9012ms 200 text/css
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/jquery.validate.min.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery-1.10.2.min.js'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\lib\jquery-1.10.2.min.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 218.017ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery.validate.min.js'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\lib\jquery.validate.min.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 57.4233ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/jquery.validate.unobtrusive.min.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/jquery-migrate-1.2.1.min.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/jquery-ui-1.10.3.custom.min.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/js/public.common.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/js/public.ajaxcart.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery.validate.unobtrusive.min.js'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\lib\jquery.validate.unobtrusive.min.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 149.2825ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/js/public.common.js'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\js\public.common.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 261.5835ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/images/thumbs/0000095_heavy-duty-livewire_415.jpeg  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery-ui-1.10.3.custom.min.js'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\lib\jquery-ui-1.10.3.custom.min.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery-migrate-1.2.1.min.js'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\lib\jquery-migrate-1.2.1.min.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/logo.png  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/js/public.ajaxcart.js'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\js\public.ajaxcart.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/shopping-bag.png  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/images/thumbs/0000095_heavy-duty-livewire_415.jpeg'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\images\thumbs\0000095_heavy-duty-livewire_415.jpeg'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 137.2478ms 200 image/jpeg
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 552.5667ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/logo.png'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\logo.png'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/wishlist-button.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 163.6796ms 200 image/png
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/shopping-bag.png'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\shopping-bag.png'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/rating1.png  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/rating1.png'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\rating1.png'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 644.2831ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 69.8472ms 200 image/png
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 254.1886ms 200 image/png
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/wishlist-button.png'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\wishlist-button.png'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/compare-button.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 193.3028ms 200 image/png
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/images/thumbs/0000094_livewire_415.jpeg  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/ajax-loader-small.gif  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/rating2.png  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/rating2.png'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\rating2.png'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/ajax-loader-small.gif'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\ajax-loader-small.gif'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/compare-button.png'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\compare-button.png'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 70.7319ms 200 image/gif
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/images/thumbs/0000094_livewire_415.jpeg'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\images\thumbs\0000094_livewire_415.jpeg'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 167.4551ms 200 image/png
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/social-sprite.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/view-list.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 228.6459ms 200 image/png
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 258.4771ms 200 image/jpeg
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/view-list.png'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\view-list.png'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/view-grid.png  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/social-sprite.png'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\social-sprite.png'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 131.7121ms 200 image/png
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/view-grid.png'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\view-grid.png'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/loading.gif  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 134.0644ms 200 image/png
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 1268.5559ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 246.6939ms 200 image/png
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/loading.gif'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\loading.gif'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 136.214ms 200 image/gif
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/jquery-ui-themes/smoothness/images/ui-bg_flat_75_ffffff_40x100.png  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery-ui-themes/smoothness/images/ui-bg_flat_75_ffffff_40x100.png'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\lib\jquery-ui-themes\smoothness\images\ui-bg_flat_75_ffffff_40x100.png'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 55.8367ms 200 image/png
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 69
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Messages.QueuedMessagesSendTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 88.6195ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 202.9711ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/fully-lit-2?bldrshaft  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CatalogController.Category (Nop.Web) with arguments (52, Nop.Web.Models.Catalog.CatalogPagingFilteringModel) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Catalog/CategoryTemplate.ProductsInGridOrLines.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CatalogController.Category (Nop.Web) in 1090.8268ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 1346.548ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/css/styles.css  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/jquery-1.10.2.min.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/jquery-ui-themes/smoothness/jquery-ui-1.10.3.custom.min.css  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/css/styles.css'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\css\styles.css'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 39.188ms 200 text/css
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery-1.10.2.min.js'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\lib\jquery-1.10.2.min.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery-ui-themes/smoothness/jquery-ui-1.10.3.custom.min.css'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\lib\jquery-ui-themes\smoothness\jquery-ui-1.10.3.custom.min.css'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 119.4531ms 200 text/css
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 124.5441ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/jquery.validate.min.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery.validate.min.js'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\lib\jquery.validate.min.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 26.6157ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/jquery.validate.unobtrusive.min.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery.validate.unobtrusive.min.js'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\lib\jquery.validate.unobtrusive.min.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 12.5338ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/jquery-ui-1.10.3.custom.min.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery-ui-1.10.3.custom.min.js'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\lib\jquery-ui-1.10.3.custom.min.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 49.1652ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/logo.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/jquery-migrate-1.2.1.min.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/js/public.common.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/images/thumbs/0000094_livewire_415.jpeg  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/logo.png'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\logo.png'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/js/public.common.js'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\js\public.common.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/images/thumbs/0000094_livewire_415.jpeg'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\images\thumbs\0000094_livewire_415.jpeg'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery-migrate-1.2.1.min.js'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\lib\jquery-migrate-1.2.1.min.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 104.2955ms 200 image/jpeg
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 146.508ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 160.0454ms 200 image/png
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/js/public.ajaxcart.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/js/public.ajaxcart.js'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\js\public.ajaxcart.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/shopping-bag.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 246.808ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/images/thumbs/0000095_heavy-duty-livewire_415.jpeg  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/view-grid.png  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/view-grid.png'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\view-grid.png'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 129.8472ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/wishlist-button.png  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/wishlist-button.png'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\wishlist-button.png'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/images/thumbs/0000095_heavy-duty-livewire_415.jpeg'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\images\thumbs\0000095_heavy-duty-livewire_415.jpeg'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 78.1268ms 200 image/png
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/compare-button.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 179.0585ms 200 image/jpeg
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/compare-button.png'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\compare-button.png'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 81.2219ms 200 image/png
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 241.9931ms 200 image/png
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/view-list.png  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/shopping-bag.png'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\shopping-bag.png'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 359.3424ms 200 image/png
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/rating1.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/rating2.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/loading.gif  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/loading.gif'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\loading.gif'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/view-list.png'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\view-list.png'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 200.1623ms 200 image/png
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/rating2.png'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\rating2.png'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/ajax-loader-small.gif  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/rating1.png'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\rating1.png'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/ajax-loader-small.gif'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\ajax-loader-small.gif'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 116.474ms 200 image/gif
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/Themes/DefaultClean/Content/images/social-sprite.png  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/DefaultClean/Content/images/social-sprite.png'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Themes\DefaultClean\Content\images\social-sprite.png'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 105.8655ms 200 image/gif
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 50.8402ms 200 image/png
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 239.4044ms 200 image/png
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 237.4251ms 200 image/png
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/lib/jquery-ui-themes/smoothness/images/ui-bg_flat_75_ffffff_40x100.png  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery-ui-themes/smoothness/images/ui-bg_flat_75_ffffff_40x100.png'. Physical path: 'C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\wwwroot\lib\jquery-ui-themes\smoothness\images\ui-bg_flat_75_ffffff_40x100.png'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 54.0621ms 200 image/png
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 64
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Customers.DeleteGuestsTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 140.3644ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 240.545ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 58
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Common.KeepAliveTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/keepalive/index  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 1.6855ms 200 
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 48.9828ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 181.6106ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 69
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Messages.QueuedMessagesSendTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 132.2679ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 361.9862ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 69
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Messages.QueuedMessagesSendTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 186.7589ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 477.8146ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 69
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Messages.QueuedMessagesSendTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 78.2809ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 296.7216ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 69
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Messages.QueuedMessagesSendTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 114.0367ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 257.7544ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 69
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Messages.QueuedMessagesSendTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 102.6866ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 237.2321ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 58
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Common.KeepAliveTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/keepalive/index  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 22.252ms 200 
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 130.9799ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 284.6356ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 69
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Messages.QueuedMessagesSendTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 78.9239ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 191.9548ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 69
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Messages.QueuedMessagesSendTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 182.8729ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 329.2563ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/fully-lit-2?bldrshaft  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CatalogController.Category (Nop.Web) with arguments (52, Nop.Web.Models.Catalog.CatalogPagingFilteringModel) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Catalog/CategoryTemplate.ProductsInGridOrLines.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CatalogController.Category (Nop.Web) in 622.7307ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 854.5303ms 200 text/html; charset=utf-8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

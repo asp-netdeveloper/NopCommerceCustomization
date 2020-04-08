@@ -1,0 +1,14 @@
+C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Plugins\Payments.Worldpay\plugin.json
+C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Plugins\Payments.Worldpay\Views\Configure.cshtml
+C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Plugins\Payments.Worldpay\Views\PaymentInfo.cshtml
+C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Plugins\Payments.Worldpay\Views\_ViewImports.cshtml
+C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Plugins\Payments.Worldpay\Views\Customer\_CreateOrUpdate.Worldpay.cshtml
+C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Plugins\Payments.Worldpay\cards.jpg
+C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Plugins\Payments.Worldpay\logo.jpg
+C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Plugins\Payments.Worldpay\Nop.Plugin.Payments.Worldpay.dll
+C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Plugins\Payments.Worldpay\Nop.Plugin.Payments.Worldpay.pdb
+C:\Users\Khushbu\source\repos\npbuilder\Plugins\Nop.Plugin.Payments.Worldpay\obj\Debug\net461\Nop.Plugin.Payments.Worldpay.csproj.CoreCompileInputs.cache
+C:\Users\Khushbu\source\repos\npbuilder\Plugins\Nop.Plugin.Payments.Worldpay\obj\Debug\net461\Nop.Plugin.Payments.Worldpay.AssemblyInfoInputs.cache
+C:\Users\Khushbu\source\repos\npbuilder\Plugins\Nop.Plugin.Payments.Worldpay\obj\Debug\net461\Nop.Plugin.Payments.Worldpay.AssemblyInfo.cs
+C:\Users\Khushbu\source\repos\npbuilder\Plugins\Nop.Plugin.Payments.Worldpay\obj\Debug\net461\Nop.Plugin.Payments.Worldpay.dll
+C:\Users\Khushbu\source\repos\npbuilder\Plugins\Nop.Plugin.Payments.Worldpay\obj\Debug\net461\Nop.Plugin.Payments.Worldpay.pdb

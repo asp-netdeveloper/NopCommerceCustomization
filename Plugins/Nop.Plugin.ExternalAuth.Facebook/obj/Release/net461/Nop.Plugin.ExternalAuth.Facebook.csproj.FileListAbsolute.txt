@@ -1,0 +1,15 @@
+C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Plugins\ExternalAuth.Facebook\Content\facebookstyles.css
+C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Plugins\ExternalAuth.Facebook\Content\Images\facebook-signing.png
+C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Plugins\ExternalAuth.Facebook\plugin.json
+C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Plugins\ExternalAuth.Facebook\Views\Configure.cshtml
+C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Plugins\ExternalAuth.Facebook\Views\PublicInfo.cshtml
+C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Plugins\ExternalAuth.Facebook\Views\_ViewImports.cshtml
+C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Plugins\ExternalAuth.Facebook\logo.jpg
+C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Plugins\ExternalAuth.Facebook\Nop.Plugin.ExternalAuth.Facebook.dll
+C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Plugins\ExternalAuth.Facebook\Nop.Plugin.ExternalAuth.Facebook.pdb
+C:\Users\Khushbu\source\repos\npbuilder\Plugins\Nop.Plugin.ExternalAuth.Facebook\obj\Release\net461\Nop.Plugin.ExternalAuth.Facebook.csprojResolveAssemblyReference.cache
+C:\Users\Khushbu\source\repos\npbuilder\Plugins\Nop.Plugin.ExternalAuth.Facebook\obj\Release\net461\Nop.Plugin.ExternalAuth.Facebook.csproj.CoreCompileInputs.cache
+C:\Users\Khushbu\source\repos\npbuilder\Plugins\Nop.Plugin.ExternalAuth.Facebook\obj\Release\net461\Nop.Plugin.ExternalAuth.Facebook.AssemblyInfoInputs.cache
+C:\Users\Khushbu\source\repos\npbuilder\Plugins\Nop.Plugin.ExternalAuth.Facebook\obj\Release\net461\Nop.Plugin.ExternalAuth.Facebook.AssemblyInfo.cs
+C:\Users\Khushbu\source\repos\npbuilder\Plugins\Nop.Plugin.ExternalAuth.Facebook\obj\Release\net461\Nop.Plugin.ExternalAuth.Facebook.dll
+C:\Users\Khushbu\source\repos\npbuilder\Plugins\Nop.Plugin.ExternalAuth.Facebook\obj\Release\net461\Nop.Plugin.ExternalAuth.Facebook.pdb

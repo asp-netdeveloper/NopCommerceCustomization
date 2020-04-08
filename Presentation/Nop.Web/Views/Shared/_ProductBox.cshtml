@@ -1,0 +1,742 @@
+﻿@model ProductOverviewModel
+@using Nop.Core
+@using Nop.Core.Domain.Catalog
+@using Nop.Core.Domain.Orders
+@using Nop.Core.Domain.Tax
+@inject CatalogSettings catalogSettings
+@inject IWorkContext workContext
+
+@using System.Net
+@using Microsoft.AspNetCore.Http
+@inject IWebHelper webHelper
+@inject IHttpContextAccessor httpContextAccessor
+
+@using Microsoft.AspNetCore.Mvc;
+
+@using Nop.Core.Domain.Orders
+@using System;
+@using System.Data;
+@using System.Linq;
+@using Nop.Core;
+@using Nop.Core.Data;
+@using Nop.Core.Domain.Catalog;
+@using System.Data.SqlClient;
+@using Nop.Services.Media
+@using System.Text;
+
+
+
+@{
+    var val = this.Context.Request.QueryString.Value;
+    var attflagvalue = "";
+    var attflagshaftvalue = "";
+
+    if (this.Context.Session.GetString("resultattrflag") != null)
+    {
+        attflagvalue = this.Context.Session.GetString("resultattrflag");
+    }
+
+    if (this.Context.Session.GetString("resultattrflagshaft") != null)
+    {
+        attflagshaftvalue = this.Context.Session.GetString("resultattrflagshaft");
+    }
+
+    //prepare "Add to cart" AJAX link
+    var addtocartlink = "";
+    var shoppingCartTypeId = (int)ShoppingCartType.ShoppingCart;
+    var quantity = 1;
+    if (Model.ProductPrice.ForceRedirectionAfterAddingToCart)
+    {
+        addtocartlink = Url.RouteUrl("AddProductToCart-Catalog", new { productId = Model.Id, shoppingCartTypeId = shoppingCartTypeId, quantity = quantity, forceredirection = Model.ProductPrice.ForceRedirectionAfterAddingToCart });
+    }
+    else
+    {
+        addtocartlink = Url.RouteUrl("AddProductToCart-Catalog", new { productId = Model.Id, shoppingCartTypeId = shoppingCartTypeId, quantity = quantity });
+    }
+
+    var addtowishlistlink = Url.RouteUrl("AddProductToCart-Catalog", new { productId = Model.Id, shoppingCartTypeId = (int)ShoppingCartType.Wishlist, quantity = quantity });
+    var addtocomparelink = Url.RouteUrl("AddProductToCompare", new { productId = Model.Id });
+}
+
+@{
+    SqlConnection con = null;
+    //    con = new SqlConnection("data source=.; database=npbuilder; integrated security=SSPI;MultipleActiveResultSets=True");
+    con = new SqlConnection(new DataSettingsManager().LoadSettings().DataConnectionString);
+    con.Open();
+    SqlCommand attrflag = new SqlCommand("SELECT Name FROM ProductAttributeValue INNER JOIN Product_ProductAttribute_Mapping " +
+        "ON ProductAttributeValue.ProductAttributeMappingId = Product_ProductAttribute_Mapping.Id " +
+        "WHERE Product_ProductAttribute_Mapping.ProductId =" + Model.Id, con);
+    SqlDataReader sdrflag = attrflag.ExecuteReader();
+    List<string> prdattflag = new List<string>();
+
+    while (sdrflag.Read())
+    {
+        prdattflag.Add(Convert.ToString(sdrflag["Name"]));
+    }
+
+    string productattrflag = string.Join(",", prdattflag.Select(i => i.ToString()).ToArray());
+    string[] flagvaluestr = attflagvalue.Split(',');
+    string[] prdattrvaluestr = productattrflag.Split(',');
+    var listCommon = flagvaluestr.Intersect(prdattrvaluestr);
+
+    string[] flagshaftvaluestr = attflagshaftvalue.Split(',');
+    var listCommonshft = flagshaftvaluestr.Intersect(prdattrvaluestr);
+
+    /* is req value */
+
+    SqlCommand isreq = new SqlCommand("SELECT IsRequired FROM Product_ProductAttribute_Mapping WHERE ProductId =" + Model.Id, con);
+    SqlDataReader sdrisreq = isreq.ExecuteReader();
+    List<String> isreqval = new List<String>();
+
+    while (sdrisreq.Read())
+    {
+        isreqval.Add(Convert.ToString(sdrisreq["IsRequired"]));
+    }
+
+    string isreqstring = string.Join(",", isreqval.Select(i => i.ToString()).ToArray());
+    string[] isreqvalue = isreqstring.Split(',');
+}
+
+
+@if (val == "?bldrshaft" || val == "?qd" || val == "?mb" || val == "?wl")
+{
+
+    @if (listCommon.Count() > 0)
+    {
+        <div class="picture">
+            @if (val == "?bldr")
+            {
+                <a href="@WebUtility.UrlDecode(@Url.RouteUrl("Product", new { SeName = Model.SeName + "?bldr" }))" title="@Model.DefaultPictureModel.Title">
+                    <img alt="@Model.DefaultPictureModel.AlternateText" src="@Model.DefaultPictureModel.ImageUrl" title="@Model.DefaultPictureModel.Title" />
+                </a> }
+            else if (val == "?bldrshaft")
+            {
+                <a href="@WebUtility.UrlDecode(@Url.RouteUrl("Product", new { SeName = Model.SeName + "?bldrshaft" }))" title="@Model.DefaultPictureModel.Title">
+                    <img alt="@Model.DefaultPictureModel.AlternateText" src="@Model.DefaultPictureModel.ImageUrl" title="@Model.DefaultPictureModel.Title" />
+                </a>
+            }
+            else if (val == "?qd")
+            {
+                <a href="@WebUtility.UrlDecode(@Url.RouteUrl("Product", new { SeName = Model.SeName + "?qd" }))" title="@Model.DefaultPictureModel.Title">
+                    <img alt="@Model.DefaultPictureModel.AlternateText" src="@Model.DefaultPictureModel.ImageUrl" title="@Model.DefaultPictureModel.Title" />
+                </a>
+            }
+            else if (val == "?mb")
+            {
+                <a href="@WebUtility.UrlDecode(@Url.RouteUrl("Product", new { SeName = Model.SeName + "?mb" }))" title="@Model.DefaultPictureModel.Title">
+                    <img alt="@Model.DefaultPictureModel.AlternateText" src="@Model.DefaultPictureModel.ImageUrl" title="@Model.DefaultPictureModel.Title" />
+                </a>
+            }
+            else if (val == "?wl")
+            {
+                <a href="@WebUtility.UrlDecode(@Url.RouteUrl("Product", new { SeName = Model.SeName + "?wl" }))" title="@Model.DefaultPictureModel.Title">
+                    <img alt="@Model.DefaultPictureModel.AlternateText" src="@Model.DefaultPictureModel.ImageUrl" title="@Model.DefaultPictureModel.Title" />
+                </a>
+
+            }
+            else
+            {
+                <a href="@Url.RouteUrl("Product", new { SeName = Model.SeName })" title="@Model.DefaultPictureModel.Title">
+                    <img alt="@Model.DefaultPictureModel.AlternateText" src="@Model.DefaultPictureModel.ImageUrl" title="@Model.DefaultPictureModel.Title" />
+                </a>
+            }
+        </div>
+
+
+        <div class="details">
+            <h2 class="product-title">
+                @if (val == "?bldr")
+                {
+                    <a href="@WebUtility.UrlDecode(Url.RouteUrl("Product", new { SeName = Model.SeName + "?bldr" }))">@Model.Name  </a>
+                }
+                else if (val == "?bldrshaft")
+                {
+                    <a href="@WebUtility.UrlDecode(Url.RouteUrl("Product", new { SeName = Model.SeName + "?bldrshaft" }))">@Model.Name </a>
+
+                }
+                else if (val == "?qd")
+                {
+                    <a href="@WebUtility.UrlDecode(Url.RouteUrl("Product", new { SeName = Model.SeName + "?qd" }))">@Model.Name </a>
+                }
+                else if (val == "?mb")
+                {
+                    <a href="@WebUtility.UrlDecode(Url.RouteUrl("Product", new { SeName = Model.SeName + "?mb" }))">@Model.Name </a>
+                }
+                else if (val == "?wl")
+                {
+                    <a href="@WebUtility.UrlDecode(Url.RouteUrl("Product", new { SeName = Model.SeName + "?wl" }))">@Model.Name </a>
+                }
+                else
+                {
+                    <a href="@Url.RouteUrl("Product", new { SeName = Model.SeName })">@Model.Name </a>
+                }
+            </h2>
+            @if (catalogSettings.ShowSkuOnCatalogPages && !string.IsNullOrEmpty(Model.Sku))
+            {
+                <div class="sku">
+                    @Model.Sku
+                </div>
+            }
+            @if (Model.ReviewOverviewModel.AllowCustomerReviews)
+            {
+                var ratingPercent = 0;
+                if (Model.ReviewOverviewModel.TotalReviews != 0)
+                {
+                    ratingPercent = ((Model.ReviewOverviewModel.RatingSum * 100) / Model.ReviewOverviewModel.TotalReviews) / 5;
+                }
+                <div class="product-rating-box" title="@string.Format(T("Reviews.TotalReviews").Text, Model.ReviewOverviewModel.TotalReviews)">
+                    <div class="rating">
+                        <div style="width: @(ratingPercent)%">
+                        </div>
+                    </div>
+                </div>
+            }
+            <div class="description">
+                @Html.Raw(Model.ShortDescription)
+            </div>
+            <div class="add-info">
+                @await Component.InvokeAsync("Widget", new { widgetZone = "productbox_addinfo_before", additionalData = Model.Id })
+                <div class="prices">
+                    @if (!string.IsNullOrEmpty(Model.ProductPrice.OldPrice))
+                    {
+                        <span class="price old-price">@Model.ProductPrice.OldPrice</span>
+                    }
+                    <span class="price actual-price">@Model.ProductPrice.Price</span>
+                    @if (Model.ProductPrice.DisplayTaxShippingInfo)
+                    {
+                        var inclTax = workContext.TaxDisplayType == TaxDisplayType.IncludingTax;
+                        //tax info is already included in the price (incl/excl tax). that's why we display only shipping info here
+                        //of course, you can modify appropriate locales to include VAT info there
+                        <span class="tax-shipping-info">
+                            @T(inclTax ? "Products.Price.TaxShipping.InclTax" : "Products.Price.TaxShipping.ExclTax", Url.RouteUrl("Topic", new { SeName = Html.GetTopicSeName("shippinginfo") }))
+                        </span>
+                    }
+                    @if (!string.IsNullOrEmpty(Model.ProductPrice.BasePricePAngV))
+                    {
+                        <div class="base-price-pangv">
+                            @Model.ProductPrice.BasePricePAngV
+                        </div>
+                    }
+                </div>
+                @await Component.InvokeAsync("Widget", new { widgetZone = "productbox_addinfo_middle", additionalData = Model.Id })
+                <div class="buttons">
+                    @*<input type="button" value="@T("Products.Details")" class="button-1 product-box-detail-button" onclick="setLocation('@Url.RouteUrl("Product", new { SeName = Model.SeName })')" />*@
+                    @{ var addToCartText = ""; }
+                    @if (!Model.ProductPrice.DisableBuyButton)
+                    {
+                        addToCartText = T("ShoppingCart.AddToCart").Text;
+                    }
+                    @if (Model.ProductPrice.IsRental)
+                    {
+                        addToCartText = T("ShoppingCart.Rent").Text;
+                    }
+                    @if (Model.ProductPrice.AvailableForPreOrder)
+                    {
+                        addToCartText = T("ShoppingCart.PreOrder").Text;
+                    }
+
+                    @if (val == "?bldr")
+                    {
+                        <input type="button" value="ADD TO BUILD" class="button-2 product-box-add-to-cart-button" onclick="location.href='@Url.Action("Index", "CustomBuilder", new { prdidflag = Model.Id, prdimgflag = Model.DefaultPictureModel.ImageUrl, prdnameflag = Model.Name, prdskuflag = Model.SeName, prdpriceflag = Model.ProductPrice.Price })'" />
+                    }
+                    else if (val == "?bldrshaft")
+                    {
+                        if (isreqvalue.Contains("True"))
+                        {
+                            <input type="button" value="ADD TO BUILD" class="button-2 product-box-add-to-cart-button" onclick="location.href='@WebUtility.UrlDecode(Url.RouteUrl("Product", new { SeName = Model.SeName + "?bldrshaft" }))'" />
+                        }
+                        else
+                        {
+                            <input type="button" value="ADD TO BUILD" class="button-2 product-box-add-to-cart-button" onclick="location.href='@Url.Action("Index", "CustomBuilder", new { prdidflagshaft = Model.Id, prdimgflagshaft = Model.DefaultPictureModel.ImageUrl, prdnameflagshaft = Model.Name, prdskuflagshaft = Model.SeName, prdpriceflagshaft = Model.ProductPrice.Price })'" />
+                        }
+                    }
+                    else if (val == "?qd")
+                    {
+                        if (isreqvalue.Contains("True"))
+                        {
+                            <input type="button" value="ADD TO BUILD" class="button-2 product-box-add-to-cart-button" onclick="location.href='@WebUtility.UrlDecode(Url.RouteUrl("Product", new { SeName = Model.SeName + "?qd" }))'" />
+                        }
+                        else
+                        {
+                            <input type="button" value="ADD TO BUILD" class="button-2 product-box-add-to-cart-button" onclick="location.href='@Url.Action("Index", "CustomBuilder", new { prdidqd = Model.Id, prdimgqd = Model.DefaultPictureModel.ImageUrl, prdnameqd = Model.Name, prdskuqd = Model.SeName, prdpriceqd = Model.ProductPrice.Price })'" />
+                        }
+                    }
+                    else if (val == "?mb")
+                    {
+                        if (isreqvalue.Contains("True"))
+                        {
+                            <input type="button" value="ADD TO BUILD" class="button-2 product-box-add-to-cart-button" onclick="location.href='@WebUtility.UrlDecode(Url.RouteUrl("Product", new { SeName = Model.SeName + "?mb" }))'" />
+
+                        }
+                        else
+                        {
+                            <input type="button" value="ADD TO BUILD" class="button-2 product-box-add-to-cart-button" onclick="location.href='@Url.Action("Index", "CustomBuilder", new { prdidmb = Model.Id, prdimgmb = Model.DefaultPictureModel.ImageUrl, prdnamemb = Model.Name, prdskumb = Model.SeName, prdpricemb = Model.ProductPrice.Price })'" />
+                        }
+                    }
+                    else if (val == "?wl")
+                    {
+                        if (isreqvalue.Contains("True"))
+                        {
+                            <input type="button" value="ADD TO BUILD" class="button-2 product-box-add-to-cart-button" onclick="location.href='@WebUtility.UrlDecode(Url.RouteUrl("Product", new { SeName = Model.SeName + "?wl" }))'" />
+
+                        }
+                        else
+                        {
+                            <input type="button" value="ADD TO BUILD" class="button-2 product-box-add-to-cart-button" onclick="location.href='@Url.Action("Index", "CustomBuilder", new { prdidwl = Model.Id, prdimgwl = Model.DefaultPictureModel.ImageUrl, prdnamewl = Model.Name, prdskuwl = Model.SeName, prdpricewl = Model.ProductPrice.Price })'" />
+                        }
+                    }
+                    else
+                    {
+                        <input type="button" value="@(addToCartText)" class="button-2 product-box-add-to-cart-button" onclick="AjaxCart.addproducttocart_catalog('@addtocartlink');return false;" />
+
+                    }
+                    }
+                    @if (!Model.ProductPrice.DisableAddToCompareListButton)
+                    {
+                        <input type="button" value="@T("ShoppingCart.AddToCompareList")" title="@T("ShoppingCart.AddToCompareList")" class="button-2 add-to-compare-list-button" onclick="AjaxCart.addproducttocomparelist('@addtocomparelink');return false;" />
+                    }
+                    @if (!Model.ProductPrice.DisableWishlistButton)
+                    {
+                        <input type="button" value="@T("ShoppingCart.AddToWishlist")" title="@T("ShoppingCart.AddToWishlist")" class="button-2 add-to-wishlist-button" onclick="AjaxCart.addproducttocart_catalog('@addtowishlistlink');return false;" />
+                    }
+                </div>
+                @await Component.InvokeAsync("Widget", new { widgetZone = "productbox_addinfo_after", additionalData = Model.Id })
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="picture">
+            @if (val == "?bldr")
+    {
+        <a href="@WebUtility.UrlDecode(@Url.RouteUrl("Product", new { SeName = Model.SeName + "?bldr" }))" title="@Model.DefaultPictureModel.Title">
+            <img alt="@Model.DefaultPictureModel.AlternateText" src="@Model.DefaultPictureModel.ImageUrl" title="@Model.DefaultPictureModel.Title" />
+        </a> }
+else if (val == "?bldrshaft")
+{
+        <a href="@WebUtility.UrlDecode(@Url.RouteUrl("Product", new { SeName = Model.SeName + "?bldrshaft" }))" title="@Model.DefaultPictureModel.Title">
+            <img alt="@Model.DefaultPictureModel.AlternateText" src="@Model.DefaultPictureModel.ImageUrl" title="@Model.DefaultPictureModel.Title" />
+        </a>
+        <div class="mask flex-center rgba-red-strong" style="position: absolute; top: 0; overflow: hidden; width: 100%; height: 100%; background-attachment: fixed;
+                background-color: rgba(211,211,211,0.9);">
+            <img src="@webHelper.GetStoreLocation()images/caution.png" height="25" width="25" style="margin-top: 25px; margin-left: 120px;" />
+            <p style="color:white; margin-left: 103px; margin-top: 50px;" class="white-text">CAUTION</p>
+            <p style="color:white; margin-left: 61px; margin-top: 90px;" class="white-text">This product Does Now Work With Current Selection</p>
+            <p style="color:white; margin-left: 76px; margin-top: 88px; border: 2px solid; display: inline-block;padding: 2px;" class="white-text">
+                    <input style="background-color: #248ece; color: white;" type="button" value="View Product Detail" onclick="location.href='@WebUtility.UrlDecode(@Url.RouteUrl("Product", new { SeName = Model.SeName + "?bldrshaft" }))'" />
+            </p>
+        </div>
+}
+else if (val == "?qd")
+{
+        <a href="@WebUtility.UrlDecode(@Url.RouteUrl("Product", new { SeName = Model.SeName + "?qd" }))" title="@Model.DefaultPictureModel.Title">
+            <img alt="@Model.DefaultPictureModel.AlternateText" src="@Model.DefaultPictureModel.ImageUrl" title="@Model.DefaultPictureModel.Title" />
+        </a>
+        <div class="mask flex-center rgba-red-strong" style="position: absolute; top: 0; overflow: hidden; width: 100%; height: 100%; background-attachment: fixed;
+                background-color: rgba(211,211,211,0.9);">
+            <img src="@webHelper.GetStoreLocation()images/caution.png" height="25" width="25" style="margin-top: 25px; margin-left: 120px;" />
+            <p style="color:white; margin-left: 103px; margin-top: 50px;" class="white-text">CAUTION</p>
+            <p style="color:white; margin-left: 61px; margin-top: 90px;" class="white-text">This product Does Now Work With Current Selection</p>
+            <p style="color:white; margin-left: 76px; margin-top: 88px; border: 2px solid; display: inline-block;padding: 2px;" class="white-text">
+                <input style="background-color: #248ece; color: white;" type="button" value="View Product Detail" onclick="location.href='@WebUtility.UrlDecode(@Url.RouteUrl("Product", new { SeName = Model.SeName + "?qd" }))'" />
+            </p>
+        </div>
+}
+else if (val == "?mb")
+{
+        <a href="@WebUtility.UrlDecode(@Url.RouteUrl("Product", new { SeName = Model.SeName + "?mb" }))" title="@Model.DefaultPictureModel.Title">
+            <img alt="@Model.DefaultPictureModel.AlternateText" src="@Model.DefaultPictureModel.ImageUrl" title="@Model.DefaultPictureModel.Title" />
+        </a>
+        <div class="mask flex-center rgba-red-strong" style="position: absolute; top: 0; overflow: hidden; width: 100%; height: 100%; background-attachment: fixed;
+                background-color: rgba(211,211,211,0.9);">
+            <img src="@webHelper.GetStoreLocation()images/caution.png" height="25" width="25" style="margin-top: 25px; margin-left: 120px;" />
+            <p style="color:white; margin-left: 103px; margin-top: 50px;" class="white-text">CAUTION</p>
+            <p style="color:white; margin-left: 61px; margin-top: 90px;" class="white-text">This product Does Now Work With Current Selection</p>
+            <p style="color:white; margin-left: 76px; margin-top: 88px; border: 2px solid; display: inline-block;padding: 2px;" class="white-text">
+                <input style="background-color: #248ece; color: white;" type="button" value="View Product Detail" onclick="location.href='@WebUtility.UrlDecode(@Url.RouteUrl("Product", new { SeName = Model.SeName + "?mb" }))'" />
+            </p>
+        </div>
+}
+else if (val == "?wl")
+{
+        <a href="@WebUtility.UrlDecode(@Url.RouteUrl("Product", new { SeName = Model.SeName + "?wl" }))" title="@Model.DefaultPictureModel.Title">
+            <img alt="@Model.DefaultPictureModel.AlternateText" src="@Model.DefaultPictureModel.ImageUrl" title="@Model.DefaultPictureModel.Title" />
+        </a>
+        <div class="mask flex-center rgba-red-strong" style="position: absolute; top: 0; overflow: hidden; width: 100%; height: 100%; background-attachment: fixed;
+                background-color: rgba(211,211,211,0.9);">
+            <img src="@webHelper.GetStoreLocation()images/caution.png" height="25" width="25" style="margin-top: 25px; margin-left: 120px;" />
+            <p style="color:white; margin-left: 103px; margin-top: 50px;" class="white-text">CAUTION</p>
+            <p style="color:white; margin-left: 61px; margin-top: 90px;" class="white-text">This product Does Now Work With Current Selection</p>
+            <p style="color:white; margin-left: 76px; margin-top: 88px; border: 2px solid; display: inline-block;padding: 2px;" class="white-text">
+                <input style="background-color: #248ece; color: white;" type="button" value="View Product Detail" onclick="location.href='@WebUtility.UrlDecode(@Url.RouteUrl("Product", new { SeName = Model.SeName + "?wl" }))'" />
+            </p>
+        </div>
+
+}
+else
+{
+        <a href="@Url.RouteUrl("Product", new { SeName = Model.SeName })" title="@Model.DefaultPictureModel.Title">
+            <img alt="@Model.DefaultPictureModel.AlternateText" src="@Model.DefaultPictureModel.ImageUrl" title="@Model.DefaultPictureModel.Title" />
+        </a>
+}
+        </div>
+
+
+        <div class="details">
+            <h2 class="product-title">
+                @if (val == "?bldr")
+        {
+            <a href="@WebUtility.UrlDecode(Url.RouteUrl("Product", new { SeName = Model.SeName + "?bldr" }))">@Model.Name  </a>
+}
+else if (val == "?bldrshaft")
+{
+        <a href="@WebUtility.UrlDecode(Url.RouteUrl("Product", new { SeName = Model.SeName + "?bldrshaft" }))">@Model.Name </a>
+}
+else if (val == "?qd")
+{
+        <a href="@WebUtility.UrlDecode(Url.RouteUrl("Product", new { SeName = Model.SeName + "?qd" }))">@Model.Name </a>
+}
+else if (val == "?mb")
+{
+        <a href="@WebUtility.UrlDecode(Url.RouteUrl("Product", new { SeName = Model.SeName + "?mb" }))">@Model.Name </a>
+}
+else if (val == "?wl")
+{
+        <a href="@WebUtility.UrlDecode(Url.RouteUrl("Product", new { SeName = Model.SeName + "?wl" }))">@Model.Name </a>
+}
+else
+{
+        <a href="@Url.RouteUrl("Product", new { SeName = Model.SeName })">@Model.Name </a>
+}
+            </h2>
+            @if (catalogSettings.ShowSkuOnCatalogPages && !string.IsNullOrEmpty(Model.Sku))
+    {
+        <div class="sku">
+            @Model.Sku
+        </div>
+}
+            @if (Model.ReviewOverviewModel.AllowCustomerReviews)
+    {
+        var ratingPercent = 0;
+        if (Model.ReviewOverviewModel.TotalReviews != 0)
+        {
+            ratingPercent = ((Model.ReviewOverviewModel.RatingSum * 100) / Model.ReviewOverviewModel.TotalReviews) / 5;
+        }
+        <div class="product-rating-box" title="@string.Format(T("Reviews.TotalReviews").Text, Model.ReviewOverviewModel.TotalReviews)">
+            <div class="rating">
+                <div style="width: @(ratingPercent)%">
+                </div>
+            </div>
+        </div>
+}
+            <div class="description">
+                @Html.Raw(Model.ShortDescription)
+            </div>
+            <div class="add-info">
+                @await Component.InvokeAsync("Widget", new { widgetZone = "productbox_addinfo_before", additionalData = Model.Id })
+                <div class="prices">
+                    @if (!string.IsNullOrEmpty(Model.ProductPrice.OldPrice))
+            {
+                <span class="price old-price">@Model.ProductPrice.OldPrice</span>
+    }
+                    <span class="price actual-price">@Model.ProductPrice.Price</span>
+                    @if (Model.ProductPrice.DisplayTaxShippingInfo)
+            {
+                var inclTax = workContext.TaxDisplayType == TaxDisplayType.IncludingTax;
+                //tax info is already included in the price (incl/excl tax). that's why we display only shipping info here
+                //of course, you can modify appropriate locales to include VAT info there
+                <span class="tax-shipping-info">
+                    @T(inclTax ? "Products.Price.TaxShipping.InclTax" : "Products.Price.TaxShipping.ExclTax", Url.RouteUrl("Topic", new { SeName = Html.GetTopicSeName("shippinginfo") }))
+                </span>
+    }
+                    @if (!string.IsNullOrEmpty(Model.ProductPrice.BasePricePAngV))
+            {
+                <div class="base-price-pangv">
+                    @Model.ProductPrice.BasePricePAngV
+                </div>
+    }
+                </div>
+                @await Component.InvokeAsync("Widget", new { widgetZone = "productbox_addinfo_middle", additionalData = Model.Id })
+                <div class="buttons">
+                    @*<input type="button" value="@T("Products.Details")" class="button-1 product-box-detail-button" onclick="setLocation('@Url.RouteUrl("Product", new { SeName = Model.SeName })')" />*@
+                    @{ var addToCartText = ""; }
+                    @if (!Model.ProductPrice.DisableBuyButton)
+            {
+                addToCartText = T("ShoppingCart.AddToCart").Text;
+            }
+                    @if (Model.ProductPrice.IsRental)
+            {
+                addToCartText = T("ShoppingCart.Rent").Text;
+            }
+                    @if (Model.ProductPrice.AvailableForPreOrder)
+            {
+                addToCartText = T("ShoppingCart.PreOrder").Text;
+            }
+
+                    @if (val == "?bldr")
+            {
+                <input type="button" value="ADD TO BUILD" class="button-2 product-box-add-to-cart-button" onclick="location.href='@Url.Action("Index", "CustomBuilder", new { prdidflag = Model.Id, prdimgflag = Model.DefaultPictureModel.ImageUrl, prdnameflag = Model.Name, prdskuflag = Model.SeName, prdpriceflag = Model.ProductPrice.Price })'" />
+    }
+    else if (val == "?bldrshaft")
+    {
+        if (listCommon.Count() > 0)
+        {
+            <input type="button" value="ADD TO BUILD" class="button-2 product-box-add-to-cart-button" onclick="location.href='@Url.Action("Index", "CustomBuilder", new { prdidflagshaft = Model.Id, prdimgflagshaft = Model.DefaultPictureModel.ImageUrl, prdnameflagshaft = Model.Name, prdskuflagshaft = Model.SeName, prdpriceflagshaft = Model.ProductPrice.Price })'" />
+}
+else
+{
+        <input type="button" disabled value="ADD TO BUILD" class="button-2 product-box-add-to-cart-button" onclick="location.href='@Url.Action("Index", "CustomBuilder", new { prdidflagshaft = Model.Id, prdimgflagshaft = Model.DefaultPictureModel.ImageUrl, prdnameflagshaft = Model.Name, prdskuflagshaft = Model.SeName, prdpriceflagshaft = Model.ProductPrice.Price })'" />}
+}
+else if (val == "?qd")
+{
+if (listCommonshft.Count() > 0)
+{
+        <input type="button" value="ADD TO BUILD" class="button-2 product-box-add-to-cart-button" onclick="location.href='@Url.Action("Index", "CustomBuilder", new { prdidqd = Model.Id, prdimgqd = Model.DefaultPictureModel.ImageUrl, prdnameqd = Model.Name, prdskuqd = Model.SeName, prdpriceqd = Model.ProductPrice.Price })'" />
+}
+else
+{
+        <input type="button" disabled value="ADD TO BUILD" class="button-2 product-box-add-to-cart-button" onclick="location.href='@Url.Action("Index", "CustomBuilder", new { prdidqd = Model.Id, prdimgqd = Model.DefaultPictureModel.ImageUrl, prdnameqd = Model.Name, prdskuqd = Model.SeName, prdpriceqd = Model.ProductPrice.Price })'" />
+}
+}
+else if (val == "?mb")
+{
+if (listCommonshft.Count() > 0)
+{
+        <input type="button" value="ADD TO BUILD" class="button-2 product-box-add-to-cart-button" onclick="location.href='@Url.Action("Index", "CustomBuilder", new { prdidmb = Model.Id, prdimgmb = Model.DefaultPictureModel.ImageUrl, prdnamemb = Model.Name, prdskumb = Model.SeName, prdpricemb = Model.ProductPrice.Price })'" />
+}
+else
+{
+        <input type="button" disabled value="ADD TO BUILD" class="button-2 product-box-add-to-cart-button" onclick="location.href='@Url.Action("Index", "CustomBuilder", new { prdidmb = Model.Id, prdimgmb = Model.DefaultPictureModel.ImageUrl, prdnamemb = Model.Name, prdskumb = Model.SeName, prdpricemb = Model.ProductPrice.Price })'" />
+}
+}
+else if (val == "?wl")
+{
+if (listCommonshft.Count() > 0)
+{
+        <input type="button" value="ADD TO BUILD" class="button-2 product-box-add-to-cart-button" onclick="location.href='@Url.Action("Index", "CustomBuilder", new { prdidwl = Model.Id, prdimgwl = Model.DefaultPictureModel.ImageUrl, prdnamewl = Model.Name, prdskuwl = Model.SeName, prdpricewl = Model.ProductPrice.Price })'" />
+}
+else
+{
+        <input type="button" disabled value="ADD TO BUILD" class="button-2 product-box-add-to-cart-button" onclick="location.href='@Url.Action("Index", "CustomBuilder", new { prdidwl = Model.Id, prdimgwl = Model.DefaultPictureModel.ImageUrl, prdnamewl = Model.Name, prdskuwl = Model.SeName, prdpricewl = Model.ProductPrice.Price })'" />
+}
+}
+else
+{
+        <input type="button" value="@(addToCartText)" class="button-2 product-box-add-to-cart-button" onclick="AjaxCart.addproducttocart_catalog('@addtocartlink');return false;" />
+
+}
+                    }
+                    @if (!Model.ProductPrice.DisableAddToCompareListButton)
+            {
+                <input type="button" value="@T("ShoppingCart.AddToCompareList")" title="@T("ShoppingCart.AddToCompareList")" class="button-2 add-to-compare-list-button" onclick="AjaxCart.addproducttocomparelist('@addtocomparelink');return false;" />
+    }
+                    @if (!Model.ProductPrice.DisableWishlistButton)
+            {
+                <input type="button" value="@T("ShoppingCart.AddToWishlist")" title="@T("ShoppingCart.AddToWishlist")" class="button-2 add-to-wishlist-button" onclick="AjaxCart.addproducttocart_catalog('@addtowishlistlink');return false;" />
+    }
+                </div>
+                @await Component.InvokeAsync("Widget", new { widgetZone = "productbox_addinfo_after", additionalData = Model.Id })
+            </div>
+        </div>
+}
+            }
+            else
+            {
+            <div class="picture">
+                @if (val == "?bldr")
+        {
+            <a href="@WebUtility.UrlDecode(@Url.RouteUrl("Product", new { SeName = Model.SeName + "?bldr" }))" title="@Model.DefaultPictureModel.Title">
+                <img alt="@Model.DefaultPictureModel.AlternateText" src="@Model.DefaultPictureModel.ImageUrl" title="@Model.DefaultPictureModel.Title" />
+            </a> }
+else if (val == "?bldrshaft")
+{
+        <a href="@WebUtility.UrlDecode(@Url.RouteUrl("Product", new { SeName = Model.SeName + "?bldrshaft" }))" title="@Model.DefaultPictureModel.Title">
+            <img alt="@Model.DefaultPictureModel.AlternateText" src="@Model.DefaultPictureModel.ImageUrl" title="@Model.DefaultPictureModel.Title" />
+        </a>
+}
+else if (val == "?qd")
+{
+        <a href="@WebUtility.UrlDecode(@Url.RouteUrl("Product", new { SeName = Model.SeName + "?qd" }))" title="@Model.DefaultPictureModel.Title">
+            <img alt="@Model.DefaultPictureModel.AlternateText" src="@Model.DefaultPictureModel.ImageUrl" title="@Model.DefaultPictureModel.Title" />
+        </a>
+}
+else if (val == "?mb")
+{
+        <a href="@WebUtility.UrlDecode(@Url.RouteUrl("Product", new { SeName = Model.SeName + "?mb" }))" title="@Model.DefaultPictureModel.Title">
+            <img alt="@Model.DefaultPictureModel.AlternateText" src="@Model.DefaultPictureModel.ImageUrl" title="@Model.DefaultPictureModel.Title" />
+        </a>
+}
+else if (val == "?wl")
+{
+        <a href="@WebUtility.UrlDecode(@Url.RouteUrl("Product", new { SeName = Model.SeName + "?wl" }))" title="@Model.DefaultPictureModel.Title">
+            <img alt="@Model.DefaultPictureModel.AlternateText" src="@Model.DefaultPictureModel.ImageUrl" title="@Model.DefaultPictureModel.Title" />
+        </a>
+
+}
+else
+{
+        <a href="@Url.RouteUrl("Product", new { SeName = Model.SeName })" title="@Model.DefaultPictureModel.Title">
+            <img alt="@Model.DefaultPictureModel.AlternateText" src="@Model.DefaultPictureModel.ImageUrl" title="@Model.DefaultPictureModel.Title" />
+        </a>
+}
+            </div>
+
+
+            <div class="details">
+                <h2 class="product-title">
+                    @if (val == "?bldr")
+            {
+                <a href="@WebUtility.UrlDecode(Url.RouteUrl("Product", new { SeName = Model.SeName + "?bldr" }))">@Model.Name  </a>
+    }
+    else if (val == "?bldrshaft")
+    {
+        <a href="@WebUtility.UrlDecode(Url.RouteUrl("Product", new { SeName = Model.SeName + "?bldrshaft" }))">@Model.Name </a>
+}
+else if (val == "?qd")
+{
+        <a href="@WebUtility.UrlDecode(Url.RouteUrl("Product", new { SeName = Model.SeName + "?qd" }))">@Model.Name </a>
+}
+else if (val == "?mb")
+{
+        <a href="@WebUtility.UrlDecode(Url.RouteUrl("Product", new { SeName = Model.SeName + "?mb" }))">@Model.Name </a>
+}
+else if (val == "?wl")
+{
+        <a href="@WebUtility.UrlDecode(Url.RouteUrl("Product", new { SeName = Model.SeName + "?wl" }))">@Model.Name </a>
+}
+else
+{
+        <a href="@Url.RouteUrl("Product", new { SeName = Model.SeName })">@Model.Name </a>
+}
+                </h2>
+                @if (catalogSettings.ShowSkuOnCatalogPages && !string.IsNullOrEmpty(Model.Sku))
+        {
+            <div class="sku">
+                @Model.Sku
+            </div>
+}
+                @if (Model.ReviewOverviewModel.AllowCustomerReviews)
+        {
+            var ratingPercent = 0;
+            if (Model.ReviewOverviewModel.TotalReviews != 0)
+            {
+                ratingPercent = ((Model.ReviewOverviewModel.RatingSum * 100) / Model.ReviewOverviewModel.TotalReviews) / 5;
+            }
+            <div class="product-rating-box" title="@string.Format(T("Reviews.TotalReviews").Text, Model.ReviewOverviewModel.TotalReviews)">
+                <div class="rating">
+                    <div style="width: @(ratingPercent)%">
+                    </div>
+                </div>
+            </div>
+}
+                <div class="description">
+                    @Html.Raw(Model.ShortDescription)
+                </div>
+                <div class="add-info">
+                    @await Component.InvokeAsync("Widget", new { widgetZone = "productbox_addinfo_before", additionalData = Model.Id })
+                    <div class="prices">
+                        @if (!string.IsNullOrEmpty(Model.ProductPrice.OldPrice))
+                {
+                    <span class="price old-price">@Model.ProductPrice.OldPrice</span>
+        }
+                        <span class="price actual-price">@Model.ProductPrice.Price</span>
+                        @if (Model.ProductPrice.DisplayTaxShippingInfo)
+                {
+                    var inclTax = workContext.TaxDisplayType == TaxDisplayType.IncludingTax;
+                    //tax info is already included in the price (incl/excl tax). that's why we display only shipping info here
+                    //of course, you can modify appropriate locales to include VAT info there
+                    <span class="tax-shipping-info">
+                        @T(inclTax ? "Products.Price.TaxShipping.InclTax" : "Products.Price.TaxShipping.ExclTax", Url.RouteUrl("Topic", new { SeName = Html.GetTopicSeName("shippinginfo") }))
+                    </span>
+        }
+                        @if (!string.IsNullOrEmpty(Model.ProductPrice.BasePricePAngV))
+                {
+                    <div class="base-price-pangv">
+                        @Model.ProductPrice.BasePricePAngV
+                    </div>
+        }
+                    </div>
+                    @await Component.InvokeAsync("Widget", new { widgetZone = "productbox_addinfo_middle", additionalData = Model.Id })
+                    <div class="buttons">
+                        @*<input type="button" value="@T("Products.Details")" class="button-1 product-box-detail-button" onclick="setLocation('@Url.RouteUrl("Product", new { SeName = Model.SeName })')" />*@
+                        @{ var addToCartText = ""; }
+                        @if (!Model.ProductPrice.DisableBuyButton)
+                {
+                    addToCartText = T("ShoppingCart.AddToCart").Text;
+                }
+                        @if (Model.ProductPrice.IsRental)
+                {
+                    addToCartText = T("ShoppingCart.Rent").Text;
+                }
+                        @if (Model.ProductPrice.AvailableForPreOrder)
+                {
+                    addToCartText = T("ShoppingCart.PreOrder").Text;
+                }
+
+                        @if (val == "?bldr")
+                {
+                    <input type="button" value="ADD TO BUILD" class="button-2 product-box-add-to-cart-button" onclick="location.href='@Url.Action("Index", "CustomBuilder", new { prdidflag = Model.Id, prdimgflag = Model.DefaultPictureModel.ImageUrl, prdnameflag = Model.Name, prdskuflag = Model.SeName, prdpriceflag = Model.ProductPrice.Price })'" />
+        }
+        else if (val == "?bldrshaft")
+        {
+            if (listCommon.Count() > 0)
+            {
+                <input type="button" value="ADD TO BUILD" class="button-2 product-box-add-to-cart-button" onclick="location.href='@Url.Action("Index", "CustomBuilder", new { prdidflagshaft = Model.Id, prdimgflagshaft = Model.DefaultPictureModel.ImageUrl, prdnameflagshaft = Model.Name, prdskuflagshaft = Model.SeName, prdpriceflagshaft = Model.ProductPrice.Price })'" />
+    }
+    else
+    {
+        <input type="button" disabled value="ADD TO BUILD" class="button-2 product-box-add-to-cart-button" onclick="location.href='@Url.Action("Index", "CustomBuilder", new { prdidflagshaft = Model.Id, prdimgflagshaft = Model.DefaultPictureModel.ImageUrl, prdnameflagshaft = Model.Name, prdskuflagshaft = Model.SeName, prdpriceflagshaft = Model.ProductPrice.Price })'" />}
+}
+else if (val == "?qd")
+{
+if (listCommonshft.Count() > 0)
+{
+        <input type="button" value="ADD TO BUILD" class="button-2 product-box-add-to-cart-button" onclick="location.href='@Url.Action("Index", "CustomBuilder", new { prdidqd = Model.Id, prdimgqd = Model.DefaultPictureModel.ImageUrl, prdnameqd = Model.Name, prdskuqd = Model.SeName, prdpriceqd = Model.ProductPrice.Price })'" />
+}
+else
+{
+        <input type="button" disabled value="ADD TO BUILD" class="button-2 product-box-add-to-cart-button" onclick="location.href='@Url.Action("Index", "CustomBuilder", new { prdidqd = Model.Id, prdimgqd = Model.DefaultPictureModel.ImageUrl, prdnameqd = Model.Name, prdskuqd = Model.SeName, prdpriceqd = Model.ProductPrice.Price })'" />
+}
+}
+else if (val == "?mb")
+{
+if (listCommonshft.Count() > 0)
+{
+        <input type="button" value="ADD TO BUILD" class="button-2 product-box-add-to-cart-button" onclick="location.href='@Url.Action("Index", "CustomBuilder", new { prdidmb = Model.Id, prdimgmb = Model.DefaultPictureModel.ImageUrl, prdnamemb = Model.Name, prdskumb = Model.SeName, prdpricemb = Model.ProductPrice.Price })'" />
+}
+else
+{
+        <input type="button" disabled value="ADD TO BUILD" class="button-2 product-box-add-to-cart-button" onclick="location.href='@Url.Action("Index", "CustomBuilder", new { prdidmb = Model.Id, prdimgmb = Model.DefaultPictureModel.ImageUrl, prdnamemb = Model.Name, prdskumb = Model.SeName, prdpricemb = Model.ProductPrice.Price })'" />
+}
+}
+else if (val == "?wl")
+{
+if (listCommonshft.Count() > 0)
+{
+        <input type="button" value="ADD TO BUILD" class="button-2 product-box-add-to-cart-button" onclick="location.href='@Url.Action("Index", "CustomBuilder", new { prdidwl = Model.Id, prdimgwl = Model.DefaultPictureModel.ImageUrl, prdnamewl = Model.Name, prdskuwl = Model.SeName, prdpricewl = Model.ProductPrice.Price })'" />
+}
+else
+{
+        <input type="button" disabled value="ADD TO BUILD" class="button-2 product-box-add-to-cart-button" onclick="location.href='@Url.Action("Index", "CustomBuilder", new { prdidwl = Model.Id, prdimgwl = Model.DefaultPictureModel.ImageUrl, prdnamewl = Model.Name, prdskuwl = Model.SeName, prdpricewl = Model.ProductPrice.Price })'" />
+}
+}
+else
+{
+        <input type="button" value="@(addToCartText)" class="button-2 product-box-add-to-cart-button" onclick="AjaxCart.addproducttocart_catalog('@addtocartlink');return false;" />
+
+}
+                        }
+                        @if (!Model.ProductPrice.DisableAddToCompareListButton)
+                {
+                    <input type="button" value="@T("ShoppingCart.AddToCompareList")" title="@T("ShoppingCart.AddToCompareList")" class="button-2 add-to-compare-list-button" onclick="AjaxCart.addproducttocomparelist('@addtocomparelink');return false;" />
+        }
+                        @if (!Model.ProductPrice.DisableWishlistButton)
+                {
+                    <input type="button" value="@T("ShoppingCart.AddToWishlist")" title="@T("ShoppingCart.AddToWishlist")" class="button-2 add-to-wishlist-button" onclick="AjaxCart.addproducttocart_catalog('@addtowishlistlink');return false;" />
+        }
+                    </div>
+                    @await Component.InvokeAsync("Widget", new { widgetZone = "productbox_addinfo_after", additionalData = Model.Id })
+                </div>
+            </div>
+
+            }

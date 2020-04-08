@@ -1,0 +1,12 @@
+C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Plugins\Widgets.GoogleAnalytics\plugin.json
+C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Plugins\Widgets.GoogleAnalytics\Views\Configure.cshtml
+C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Plugins\Widgets.GoogleAnalytics\Views\PublicInfo.cshtml
+C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Plugins\Widgets.GoogleAnalytics\Views\_ViewImports.cshtml
+C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Plugins\Widgets.GoogleAnalytics\logo.jpg
+C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Plugins\Widgets.GoogleAnalytics\Nop.Plugin.Widgets.GoogleAnalytics.dll
+C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Plugins\Widgets.GoogleAnalytics\Nop.Plugin.Widgets.GoogleAnalytics.pdb
+C:\Users\Khushbu\source\repos\npbuilder\Plugins\Nop.Plugin.Widgets.GoogleAnalytics\obj\Release\net461\Nop.Plugin.Widgets.GoogleAnalytics.csproj.CoreCompileInputs.cache
+C:\Users\Khushbu\source\repos\npbuilder\Plugins\Nop.Plugin.Widgets.GoogleAnalytics\obj\Release\net461\Nop.Plugin.Widgets.GoogleAnalytics.AssemblyInfoInputs.cache
+C:\Users\Khushbu\source\repos\npbuilder\Plugins\Nop.Plugin.Widgets.GoogleAnalytics\obj\Release\net461\Nop.Plugin.Widgets.GoogleAnalytics.AssemblyInfo.cs
+C:\Users\Khushbu\source\repos\npbuilder\Plugins\Nop.Plugin.Widgets.GoogleAnalytics\obj\Release\net461\Nop.Plugin.Widgets.GoogleAnalytics.dll
+C:\Users\Khushbu\source\repos\npbuilder\Plugins\Nop.Plugin.Widgets.GoogleAnalytics\obj\Release\net461\Nop.Plugin.Widgets.GoogleAnalytics.pdb

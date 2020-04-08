@@ -1,0 +1,12 @@
+C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Plugins\Payments.CheckMoneyOrder\plugin.json
+C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Plugins\Payments.CheckMoneyOrder\Views\Configure.cshtml
+C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Plugins\Payments.CheckMoneyOrder\Views\PaymentInfo.cshtml
+C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Plugins\Payments.CheckMoneyOrder\Views\_ViewImports.cshtml
+C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Plugins\Payments.CheckMoneyOrder\logo.jpg
+C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Plugins\Payments.CheckMoneyOrder\Nop.Plugin.Payments.CheckMoneyOrder.dll
+C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Plugins\Payments.CheckMoneyOrder\Nop.Plugin.Payments.CheckMoneyOrder.pdb
+C:\Users\Khushbu\source\repos\npbuilder\Plugins\Nop.Plugin.Payments.CheckMoneyOrder\obj\Debug\net461\Nop.Plugin.Payments.CheckMoneyOrder.csproj.CoreCompileInputs.cache
+C:\Users\Khushbu\source\repos\npbuilder\Plugins\Nop.Plugin.Payments.CheckMoneyOrder\obj\Debug\net461\Nop.Plugin.Payments.CheckMoneyOrder.AssemblyInfoInputs.cache
+C:\Users\Khushbu\source\repos\npbuilder\Plugins\Nop.Plugin.Payments.CheckMoneyOrder\obj\Debug\net461\Nop.Plugin.Payments.CheckMoneyOrder.AssemblyInfo.cs
+C:\Users\Khushbu\source\repos\npbuilder\Plugins\Nop.Plugin.Payments.CheckMoneyOrder\obj\Debug\net461\Nop.Plugin.Payments.CheckMoneyOrder.dll
+C:\Users\Khushbu\source\repos\npbuilder\Plugins\Nop.Plugin.Payments.CheckMoneyOrder\obj\Debug\net461\Nop.Plugin.Payments.CheckMoneyOrder.pdb

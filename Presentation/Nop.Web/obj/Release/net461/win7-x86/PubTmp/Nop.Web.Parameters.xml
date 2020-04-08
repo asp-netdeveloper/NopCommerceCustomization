@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="silverrider-002-site6" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\Khushbu\\source\\repos\\npbuilder\\Presentation\\Nop\.Web\\obj\\Release\\net461\\win7-x86\\PubTmp\\Out\\$" />
+  </parameter>
+</parameters>

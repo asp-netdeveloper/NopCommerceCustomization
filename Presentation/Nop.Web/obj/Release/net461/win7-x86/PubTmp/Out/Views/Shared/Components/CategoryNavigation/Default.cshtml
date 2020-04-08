@@ -1,0 +1,25 @@
+﻿@model CategoryNavigationModel
+@if (Model.Categories.Count > 0)
+{
+    <div class="block block-category-navigation">
+        <div class="title">
+            <strong>@T("Categories")</strong>
+        </div>
+        <div class="listbox">
+            <ul class="list">
+                <li style="height: 35px;background: #000000;border-top-right-radius: 3px;border-top-left-radius: 3px;font-weight: 400;font-size: 15px;">
+                    <a style="color: #ffffff;" href="@Url.RouteUrl("Home")/custombuilder-2">Build Your Own Custom Whip</a>
+                </li>
+                @foreach (var category in Model.Categories)
+    {
+        var categoryLineModel = new CategoryNavigationModel.CategoryLineModel
+        {
+            CurrentCategoryId = Model.CurrentCategoryId,
+            Category = category
+        };
+            @await Html.PartialAsync("_CategoryLine.Navigation", categoryLineModel)
+}
+            </ul>
+        </div>
+    </div>
+}

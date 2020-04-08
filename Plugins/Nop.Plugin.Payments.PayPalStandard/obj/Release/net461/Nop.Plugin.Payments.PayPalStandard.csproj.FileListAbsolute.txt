@@ -1,0 +1,12 @@
+C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Plugins\Payments.PayPalStandard\plugin.json
+C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Plugins\Payments.PayPalStandard\Views\Configure.cshtml
+C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Plugins\Payments.PayPalStandard\Views\PaymentInfo.cshtml
+C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Plugins\Payments.PayPalStandard\Views\_ViewImports.cshtml
+C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Plugins\Payments.PayPalStandard\logo.jpg
+C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Plugins\Payments.PayPalStandard\Nop.Plugin.Payments.PayPalStandard.dll
+C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web\Plugins\Payments.PayPalStandard\Nop.Plugin.Payments.PayPalStandard.pdb
+C:\Users\Khushbu\source\repos\npbuilder\Plugins\Nop.Plugin.Payments.PayPalStandard\obj\Release\net461\Nop.Plugin.Payments.PayPalStandard.csproj.CoreCompileInputs.cache
+C:\Users\Khushbu\source\repos\npbuilder\Plugins\Nop.Plugin.Payments.PayPalStandard\obj\Release\net461\Nop.Plugin.Payments.PayPalStandard.AssemblyInfoInputs.cache
+C:\Users\Khushbu\source\repos\npbuilder\Plugins\Nop.Plugin.Payments.PayPalStandard\obj\Release\net461\Nop.Plugin.Payments.PayPalStandard.AssemblyInfo.cs
+C:\Users\Khushbu\source\repos\npbuilder\Plugins\Nop.Plugin.Payments.PayPalStandard\obj\Release\net461\Nop.Plugin.Payments.PayPalStandard.dll
+C:\Users\Khushbu\source\repos\npbuilder\Plugins\Nop.Plugin.Payments.PayPalStandard\obj\Release\net461\Nop.Plugin.Payments.PayPalStandard.pdb

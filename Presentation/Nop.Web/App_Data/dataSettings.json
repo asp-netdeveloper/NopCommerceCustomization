@@ -1,0 +1,5 @@
+{
+  "DataProvider": "sqlserver",
+  "DataConnectionString": "Data Source=DESKTOP-CGE9LJR;Initial Catalog=npbuilder;Integrated Security=True;Persist Security Info=False;MultipleActiveResultSets=True",
+  "RawDataSettings": {}
+}

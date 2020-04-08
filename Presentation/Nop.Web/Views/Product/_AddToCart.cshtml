@@ -1,0 +1,236 @@
+﻿@model ProductDetailsModel.AddToCartModel
+@inject IPictureService pictureService
+@inject Nop.Core.IWebHelper webHelper
+
+@using Nop.Core.Domain.Orders
+@using System;
+@using System.Data;
+@using System.Linq;
+@using Nop.Core;
+@using Nop.Core.Data;
+@using Nop.Core.Domain.Catalog;
+@using System.Data.SqlClient;
+@using Nop.Services.Media
+@using System.Text;
+
+
+
+@if (Model.UpdatedShoppingCartItemId > 0)
+{
+    <input asp-for="UpdatedShoppingCartItemId" type="hidden" />
+}
+@{
+    var prdid = Model.ProductId;
+    var picture = pictureService.GetPicturesByProductId(prdid).FirstOrDefault();
+    var prdimgquery = new StringBuilder();
+    if (picture != null)
+    {
+        var seName = picture.SeoFilename;
+        var pictureId = picture.Id;
+        var mimeType = picture.MimeType;
+
+        prdimgquery.Append(webHelper.GetStoreLocation());
+        prdimgquery.Append("images/thumbs/");
+        prdimgquery.Append(pictureId.ToString().PadLeft(7, '0'));
+        prdimgquery.Append("_" + seName);
+        prdimgquery.Append("." + mimeType.Replace("image/", ""));
+    }
+    else
+    {
+        prdimgquery.Append(webHelper.GetStoreLocation()+"images/thumbs/default-image_415.png");
+
+    }
+
+}
+@{
+    var val = this.Context.Request.QueryString.Value;
+
+    SqlConnection con = null;
+    //con = new SqlConnection("data source=.; database=npbuilder; integrated security=SSPI;MultipleActiveResultSets=True");
+    con = new SqlConnection(new DataSettingsManager().LoadSettings().DataConnectionString);
+    con.Open();
+    SqlCommand cm = new SqlCommand("Select Name from dbo.Product Where Id =" + prdid, con);
+    SqlCommand slugcm = new SqlCommand("SELECT Slug from dbo.UrlRecord Where EntityId =" + prdid + "AND EntityName = 'Product'", con);
+    SqlCommand cmprice = new SqlCommand("Select Price from dbo.Product Where Id =" + prdid, con);
+    SqlDataReader sdr = cm.ExecuteReader();
+    SqlDataReader slugsdr = slugcm.ExecuteReader();
+    SqlDataReader pricesdr = cmprice.ExecuteReader();
+    sdr.Read();
+    slugsdr.Read();
+    pricesdr.Read();
+    var prdnamequery = sdr["Name"].ToString();
+    var prdskuquery = slugsdr["Slug"].ToString();
+    var prdpricequeryold = String.Format("{0:0.00}", pricesdr["Price"]);
+    var prdpricequery = prdpricequeryold.ToString();
+
+    /* is req value */
+
+    SqlCommand isreq = new SqlCommand("SELECT IsRequired FROM Product_ProductAttribute_Mapping WHERE ProductId =" + prdid, con);
+    SqlDataReader sdrisreq = isreq.ExecuteReader();
+    List<String> isreqval = new List<String>();
+    var controllerTypeIdValue = 0;
+    string[] isreqvalue;
+
+    while (sdrisreq.Read())
+    {
+        isreqval.Add(Convert.ToString(sdrisreq["IsRequired"]));
+        SqlCommand controllertypeid = new SqlCommand("SELECT AttributeControlTypeId FROM Product_ProductAttribute_Mapping WHERE ProductId =" + prdid + "AND IsRequired = 1", con);
+        SqlDataReader sdrcontrollertypeid = controllertypeid.ExecuteReader();
+        while (sdrcontrollertypeid.Read())
+        {
+            controllerTypeIdValue = Convert.ToInt32(sdrcontrollertypeid["AttributeControlTypeId"]);
+        }
+    }
+
+    if(isreqval.Count() > 0)
+    {
+        string isreqstring = string.Join(",", isreqval.Select(i => i.ToString()).ToArray());
+        isreqvalue = isreqstring.Split(',');
+        ViewBag.cntrltypeid = controllerTypeIdValue;
+    } else
+    {
+        string isreqstring = "false";
+        isreqvalue = isreqstring.Split(',');
+    }
+}
+
+
+<script type="text/javascript">
+    function requireerrormessage() {
+        var typeid = parseInt(@ViewBag.cntrltypeid);
+        switch (typeid) {
+            case 1:
+                if ($('#product_attribute_31 option:selected').length > 0) {
+                    window.location = '@webHelper.GetStoreLocation()CustomBuilder/Index?prdidflagshaft=@Model.ProductId&prdimgflagshaft=@prdimgquery&prdnameflagshaft=@prdnamequery&prdskuflagshaft=@prdskuquery&prdpriceflagshaft=@prdpricequery';
+                } else {
+                    alert("Select Required Attribute.");
+                }
+                break;
+            case 3:
+                if ($('input[name=product_attribute_37]').is(':checked')) {
+                    window.location = '@webHelper.GetStoreLocation()CustomBuilder/Index?prdidflagshaft=@Model.ProductId&prdimgflagshaft=@prdimgquery&prdnameflagshaft=@prdnamequery&prdskuflagshaft=@prdskuquery&prdpriceflagshaft=@prdpricequery';
+                } else {
+                    alert("Select Required Attribute.")
+                }
+                break;
+            default:
+                alert("dft");
+        }
+    }
+</script>
+
+
+@if (!Model.DisableBuyButton || Model.CustomerEntersPrice)
+{
+    <div class="add-to-cart">
+        @if (Model.CustomerEntersPrice)
+        {
+            <div class="customer-entered-price">
+                <div class="price-input">
+                    <label asp-for="CustomerEnteredPrice" asp-postfix=":" class="enter-price-label"></label>
+                    @*round price*@
+                    <input asp-for="CustomerEnteredPrice" value="@Convert.ToInt32(Math.Ceiling(Model.CustomerEnteredPrice))" class="enter-price-input" />
+                </div>
+                <div class="price-range">
+                    @Model.CustomerEnteredPriceRange
+                </div>
+            </div>
+        }
+        @if (!string.IsNullOrEmpty(Model.MinimumQuantityNotification))
+        {
+            <div class="min-qty-notification">@Model.MinimumQuantityNotification</div>
+        }
+        @if (!Model.DisableBuyButton)
+        {
+            <div class="add-to-cart-panel">
+                <label asp-for="EnteredQuantity" asp-postfix=":" class="qty-label"></label>
+                @if (Model.AllowedQuantities.Count > 0)
+    {
+            <select asp-for="EnteredQuantity" asp-items="Model.AllowedQuantities" class="qty-dropdown"></select>
+}
+else
+{
+            @if (val == "?bldr" || val == "?bldrshaft" || val == "?qd" || val == "?mb" || val == "?wl")
+{
+            <input asp-for="EnteredQuantity" class="qty-input" type="text" disabled />
+}
+else
+{
+            <input asp-for="EnteredQuantity" class="qty-input" type="text" />
+}
+            <script type="text/javascript" asp-location="Footer">
+                        //when a customer clicks 'Enter' button we submit the "add to cart" button (if visible)
+                        $(document).ready(function() {
+                            $("#@Html.IdFor(model => model.EnteredQuantity)").keydown(function(event) {
+                                if (event.keyCode == 13) {
+                                    $("#add-to-cart-button-@Model.ProductId").click();
+                                    return false;
+                                }
+                            });
+                        });
+            </script>
+}
+                @{
+        var addToCartText = "";
+        if (Model.UpdatedShoppingCartItemId > 0 && Model.UpdateShoppingCartItemType.HasValue && Model.UpdateShoppingCartItemType.Value == ShoppingCartType.ShoppingCart)
+        {
+            addToCartText = T("ShoppingCart.AddToCart.Update").Text;
+        }
+        else
+        {
+            @if (val == "?bldr" || val == "?bldrshaft" || val == "?qd" || val == "?mb" || val == "?wl")
+{
+    addToCartText = "ADD TO BUILD";
+}
+else
+{
+    addToCartText = T("ShoppingCart.AddToCart").Text;
+}
+//addToCartText = T("ShoppingCart.AddToCart").Text;
+if (Model.IsRental)
+{
+    addToCartText = T("ShoppingCart.Rent").Text;
+}
+if (Model.AvailableForPreOrder)
+{
+    addToCartText = T("ShoppingCart.PreOrder").Text;
+}
+}
+
+            @if (val == "?bldr")
+{
+            <input type="button" value="ADD TO BUILD" class="button-1 add-to-cart-button" onclick="location.href='@Url.Action("Index", "CustomBuilder", new { prdidflag = Model.ProductId, prdimgflag = prdimgquery, prdnameflag = prdnamequery, prdskuflag = prdskuquery, prdpriceflag = prdpricequery })'" />
+}
+else if (val == "?bldrshaft")
+{
+if (isreqvalue.Contains("True"))
+{
+            <input type="button" value="ADD TO BUILD" class="button-1 add-to-cart-button" onclick="requireerrormessage();" />
+}
+else
+{
+            <input type="button" value="ADD TO BUILD" id="newbtn" class="button-1 add-to-cart-button" onclick="location.href='@Url.Action("Index", "CustomBuilder", new { prdidflagshaft = Model.ProductId, prdimgflagshaft = prdimgquery, prdnameflagshaft = prdnamequery, prdskuflagshaft = prdskuquery, prdpriceflagshaft = prdpricequery })'" />
+}
+}
+else if (val == "?qd")
+{
+            <input type="button" value="ADD TO BUILD" class="button-1 add-to-cart-button" onclick="location.href='@Url.Action("Index", "CustomBuilder", new { prdidqd = Model.ProductId, prdimgqd = prdimgquery, prdnameqd = prdnamequery, prdskuqd = prdskuquery, prdpriceqd = prdpricequery })'" />
+}
+else if (val == "?mb")
+{
+            <input type="button" value="ADD TO BUILD" class="button-1 add-to-cart-button" onclick="location.href='@Url.Action("Index", "CustomBuilder", new { prdidmb = Model.ProductId, prdimgmb = prdimgquery, prdnamemb = prdnamequery, prdskumb = prdskuquery, prdpricemb = prdpricequery   })'" />
+}
+else if (val == "?wl")
+{
+            <input type="button" value="ADD TO BUILD" class="button-1 add-to-cart-button" onclick="location.href='@Url.Action("Index", "CustomBuilder", new { prdidwl = Model.ProductId, prdimgwl = prdimgquery, prdnamewl = prdnamequery, prdskuwl = prdskuquery, prdpricewl = prdpricequery   })'" />
+}
+else
+{
+            <input type="button" id="add-to-cart-button-@Model.ProductId" class="button-1 add-to-cart-button" value="@addToCartText" data-productid="@Model.ProductId" onclick="AjaxCart.addproducttocart_details('@Url.RouteUrl("AddProductToCart-Details", new { productId = Model.ProductId, shoppingCartTypeId = (int)ShoppingCartType.ShoppingCart })', '#product-details-form');return false;" />
+}
+                }
+            </div>
+        }
+        @await Component.InvokeAsync("Widget", new { widgetZone = "productdetails_add_info", additionalData = Model.ProductId })
+    </div>
+}

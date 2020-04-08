@@ -1,0 +1,1642 @@
+Hosting environment: Development
+Content root path: C:\Users\Khushbu\source\repos\npbuilder\Presentation\Nop.Web
+Now listening on: http://localhost:3676
+Application started. Press Ctrl+C to shut down.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.HomeController.Index (Nop.Web) with arguments ((null)) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.HomeController.Index (Nop.Web) in 17171.3801ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 18479.469ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/custombuilder-2  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.TopicController.TopicDetails (Nop.Web) with arguments (13) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Topic/TopicDetails.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.TopicController.TopicDetails (Nop.Web) in 603.0244ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 734.3738ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/CustomBuilder  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CustomBuilderController.Index (Nop.Web) with arguments ((null)) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/CustomBuilder/Index.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CustomBuilderController.Index (Nop.Web) in 1565.9682ms
+info: Microsoft.AspNetCore.Session.DistributedSession[3]
+      Session started; Key:88ae17ec-7295-5971-5dc8-f3816428194e, Id:942246b2-747d-d627-ee41-70e0fb478785
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 1742.3992ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/srcset=%22https:/img.skatewarehouse.com/framework16/images/pros/2x/BARL.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 175.6082ms 404 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/flagc?bldr  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CatalogController.Category (Nop.Web) with arguments (45, Nop.Web.Models.Catalog.CatalogPagingFilteringModel) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Catalog/CategoryTemplate.ProductsInGridOrLines.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CatalogController.Category (Nop.Web) in 3882.5093ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 3982.7585ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/CustomBuilder?prdidflag=65&prdimgflag=http%3A%2F%2Flocalhost%3A15536%2Fimages%2Fthumbs%2F0000091_aces-and-8s-perfect_415.jpeg&prdnameflag=Aces%20and%208%27s%20perfect&prdskuflag=aces-and-8s-perfect&prdpriceflag=$17.96  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CustomBuilderController.Index (Nop.Web) with arguments ((null)) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/CustomBuilder/Index.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CustomBuilderController.Index (Nop.Web) in 495.4025ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 563.8183ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/srcset=%22https:/img.skatewarehouse.com/framework16/images/pros/2x/BARL.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 89.6184ms 404 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/flag-shaft-2?bldrshaft  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CatalogController.Category (Nop.Web) with arguments (51, Nop.Web.Models.Catalog.CatalogPagingFilteringModel) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Catalog/CategoryTemplate.ProductsInGridOrLines.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CatalogController.Category (Nop.Web) in 599.2323ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 676.8822ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 69
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Messages.QueuedMessagesSendTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 196.1607ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 255.4885ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/heavy-duty-livewire?bldrshaft  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ProductController.ProductDetails (Nop.Web) with arguments (71, 0) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Product/ProductTemplate.Simple.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ProductController.ProductDetails (Nop.Web) in 4491.3934ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 4581.901ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/shoppingcart/productdetails_attributechange?productId=71&validateAttributeConditions=False&loadPicture=True application/x-www-form-urlencoded; charset=UTF-8 207
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ShoppingCartController.ProductDetails_AttributeChange (Nop.Web) with arguments (71, False, True, Microsoft.AspNetCore.Http.FormCollection) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor[1]
+      Executing JsonResult, writing value { gtin = , mpn = , sku = , price = $170.99, stockAvailability = , enabledattributemappingids = System.Int32[], disabledattributemappingids = System.Int32[], pictureFullSizeUrl = , pictureDefaultSizeUrl = , isFreeShipping = False, message =  }.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ShoppingCartController.ProductDetails_AttributeChange (Nop.Web) in 162.0693ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 278.3498ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/CustomBuilder?prdidflagshaft=71&prdimgflagshaft=http%3A%2F%2Flocalhost%3A15536%2Fimages%2Fthumbs%2F0000095_heavy-duty-livewire.jpeg&prdnameflagshaft=Heavy%20duty%20Livewire&prdskuflagshaft=heavy-duty-livewire&prdpriceflagshaft=189.99  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CustomBuilderController.Index (Nop.Web) with arguments ((null)) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/CustomBuilder/Index.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CustomBuilderController.Index (Nop.Web) in 433.9059ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 504.9851ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/srcset=%22https:/img.skatewarehouse.com/framework16/images/pros/2x/BARL.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 119.0931ms 404 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/CustomBuilder?prdidflagshaft=71&prdimgflagshaft=http%3A%2F%2Flocalhost%3A15536%2Fimages%2Fthumbs%2F0000095_heavy-duty-livewire.jpeg&prdnameflagshaft=Heavy%20duty%20Livewire&prdskuflagshaft=heavy-duty-livewire&prdpriceflagshaft=189.99  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CustomBuilderController.Index (Nop.Web) with arguments ((null)) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/CustomBuilder/Index.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CustomBuilderController.Index (Nop.Web) in 828.6364ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 908.3456ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/srcset=%22https:/img.skatewarehouse.com/framework16/images/pros/2x/BARL.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 152.2953ms 404 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/quick-disconnectc?qd  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CatalogController.Category (Nop.Web) with arguments (55, Nop.Web.Models.Catalog.CatalogPagingFilteringModel) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Catalog/CategoryTemplate.ProductsInGridOrLines.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CatalogController.Category (Nop.Web) in 824.3229ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 923.0192ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/CustomBuilder?prdidqd=78&prdimgqd=http%3A%2F%2Flocalhost%3A15536%2Fimages%2Fthumbs%2Fdefault-image_415.png&prdnameqd=Electrical%20quick%20disconnect%20-%20Standard&prdskuqd=electrical-quick-disconnect-standard&prdpriceqd=$13.50  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CustomBuilderController.Index (Nop.Web) with arguments ((null)) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/CustomBuilder/Index.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CustomBuilderController.Index (Nop.Web) in 507.3348ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 596.5847ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/srcset=%22https:/img.skatewarehouse.com/framework16/images/pros/2x/BARL.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 86.1118ms 404 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/whip-lightingc?wl  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CatalogController.Category (Nop.Web) with arguments (57, Nop.Web.Models.Catalog.CatalogPagingFilteringModel) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Catalog/CategoryTemplate.ProductsInGridOrLines.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CatalogController.Category (Nop.Web) in 598.1494ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 662.5911ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/CustomBuilder?prdidwl=82&prdimgwl=http%3A%2F%2Flocalhost%3A15536%2Fimages%2Fthumbs%2F0000100_1156-12-light-perfect_415.png&prdnamewl=1156%2012%20Light%20perfect&prdskuwl=1156-12-light-2&prdpricewl=$49.50  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CustomBuilderController.Index (Nop.Web) with arguments ((null)) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/CustomBuilder/Index.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CustomBuilderController.Index (Nop.Web) in 462.7879ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 526.3774ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/srcset=%22https:/img.skatewarehouse.com/framework16/images/pros/2x/BARL.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 93.3126ms 404 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 69
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Messages.QueuedMessagesSendTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 113.8345ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 226.8569ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 69
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Messages.QueuedMessagesSendTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 105.4352ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 159.2801ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/CustomBuilder?prdidwl=82&prdimgwl=http%3A%2F%2Flocalhost%3A15536%2Fimages%2Fthumbs%2F0000100_1156-12-light-perfect_415.png&prdnamewl=1156%2012%20Light%20perfect&prdskuwl=1156-12-light-2&prdpricewl=$49.50  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CustomBuilderController.Index (Nop.Web) with arguments ((null)) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/CustomBuilder/Index.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CustomBuilderController.Index (Nop.Web) in 1257.9239ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 1343.4708ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/srcset=%22https:/img.skatewarehouse.com/framework16/images/pros/2x/BARL.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 130.5058ms 404 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 69
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Messages.QueuedMessagesSendTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 114.0305ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 167.3883ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 58
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Common.KeepAliveTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/keepalive/index  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 1.7406ms 200 
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 44.0138ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 94.7746ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 69
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Messages.QueuedMessagesSendTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 111.8209ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 137.8385ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/CustomBuilder?prdidwl=82&prdimgwl=http%3A%2F%2Flocalhost%3A15536%2Fimages%2Fthumbs%2F0000100_1156-12-light-perfect_415.png&prdnamewl=1156%2012%20Light%20perfect&prdskuwl=1156-12-light-2&prdpricewl=$49.50  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CustomBuilderController.Index (Nop.Web) with arguments ((null)) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/CustomBuilder/Index.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CustomBuilderController.Index (Nop.Web) in 1153.1905ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 1287.9091ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/srcset=%22https:/img.skatewarehouse.com/framework16/images/pros/2x/BARL.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 199.8855ms 404 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 69
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Messages.QueuedMessagesSendTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 68.5852ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 124.1704ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/CustomBuilder?prdidwl=82&prdimgwl=http%3A%2F%2Flocalhost%3A15536%2Fimages%2Fthumbs%2F0000100_1156-12-light-perfect_415.png&prdnamewl=1156%2012%20Light%20perfect&prdskuwl=1156-12-light-2&prdpricewl=$49.50  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CustomBuilderController.Index (Nop.Web) with arguments ((null)) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/CustomBuilder/Index.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CustomBuilderController.Index (Nop.Web) in 1140.6533ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 1246.5345ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/srcset=%22https:/img.skatewarehouse.com/framework16/images/pros/2x/BARL.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 129.1832ms 404 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/addproducttocart/catalog/65/1/1  0
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ShoppingCartController.AddProductToCart_Catalog (Nop.Web) with arguments (65, 1, 1, False) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor[1]
+      Executing JsonResult, writing value { success = True, message = The product has been added to your <a href="/cart">shopping cart</a>, updatetopcartsectionhtml = (4), updateflyoutcartsectionhtml = <div id="flyout-cart" class="flyout-cart">
+          <div class="mini-shopping-cart">
+              <div class="count">
+      There are <a href="/cart">4 item(s)</a> in your cart.        </div>
+                  <div class="items">
+                          <div class="item first">
+                                  <div class="picture">
+                                      <a href="/1156-12-light-2" title="Show details for 1156 12 Light perfect">
+                                          <img alt="Picture of 1156 12 Light perfect" src="http://localhost:15536/images/thumbs/0000100_1156-12-light-perfect_70.png" title="Show details for 1156 12 Light perfect" />
+                                      </a>
+                                  </div>
+                              <div class="product">
+                                  <div class="name">
+                                      <a href="/1156-12-light-2">1156 12 Light perfect</a>
+                                  </div>
+                                  <div class="price">Unit price: <span>$49.50</span></div>
+                                  <div class="quantity">Quantity: <span>1</span></div>
+                              </div>
+                          </div>
+                          <div class="item">
+                                  <div class="picture">
+                                      <a href="/electrical-quick-disconnect-standard" title="Show details for Electrical quick disconnect - Standard">
+                                          <img alt="Picture of Electrical quick disconnect - Standard" src="http://localhost:15536/images/thumbs/default-image_70.png" title="Show details for Electrical quick disconnect - Standard" />
+                                      </a>
+                                  </div>
+                              <div class="product">
+                                  <div class="name">
+                                      <a href="/electrical-quick-disconnect-standard">Electrical quick disconnect - Standard</a>
+                                  </div>
+                                  <div class="price">Unit price: <span>$13.50</span></div>
+                                  <div class="quantity">Quantity: <span>1</span></div>
+                              </div>
+                          </div>
+                          <div class="item">
+                                  <div class="picture">
+                                      <a href="/aces-and-8s-perfect" title="Show details for Aces and 8&#x27;s perfect">
+                                          <img alt="Picture of Aces and 8&#x27;s perfect" src="http://localhost:15536/images/thumbs/0000091_aces-and-8s-perfect_70.jpeg" title="Show details for Aces and 8&#x27;s perfect" />
+                                      </a>
+                                  </div>
+                              <div class="product">
+                                  <div class="name">
+                                      <a href="/aces-and-8s-perfect">Aces and 8&#x27;s perfect</a>
+                                  </div>
+                                  <div class="price">Unit price: <span>$17.96</span></div>
+                                  <div class="quantity">Quantity: <span>2</span></div>
+                              </div>
+                          </div>
+                  </div>
+                  <div class="totals">Sub-Total: <strong>$98.92</strong></div>
+                  <div class="buttons">
+                          <input type="button" value="Go to cart" class="button-1 cart-button" onclick="setLocation('/cart')" />
+                                  </div>
+          </div>
+      </div>
+       }.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ShoppingCartController.AddProductToCart_Catalog (Nop.Web) in 393.6917ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 500.3745ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/addproducttocart/catalog/71/1/1  0
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ShoppingCartController.AddProductToCart_Catalog (Nop.Web) with arguments (71, 1, 1, False) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor[1]
+      Executing JsonResult, writing value { redirect = /heavy-duty-livewire }.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ShoppingCartController.AddProductToCart_Catalog (Nop.Web) in 48.8155ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 99.0477ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/addproducttocart/catalog/78/1/1  0
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ShoppingCartController.AddProductToCart_Catalog (Nop.Web) with arguments (78, 1, 1, False) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor[1]
+      Executing JsonResult, writing value { success = True, message = The product has been added to your <a href="/cart">shopping cart</a>, updatetopcartsectionhtml = (5), updateflyoutcartsectionhtml = <div id="flyout-cart" class="flyout-cart">
+          <div class="mini-shopping-cart">
+              <div class="count">
+      There are <a href="/cart">5 item(s)</a> in your cart.        </div>
+                  <div class="items">
+                          <div class="item first">
+                                  <div class="picture">
+                                      <a href="/1156-12-light-2" title="Show details for 1156 12 Light perfect">
+                                          <img alt="Picture of 1156 12 Light perfect" src="http://localhost:15536/images/thumbs/0000100_1156-12-light-perfect_70.png" title="Show details for 1156 12 Light perfect" />
+                                      </a>
+                                  </div>
+                              <div class="product">
+                                  <div class="name">
+                                      <a href="/1156-12-light-2">1156 12 Light perfect</a>
+                                  </div>
+                                  <div class="price">Unit price: <span>$49.50</span></div>
+                                  <div class="quantity">Quantity: <span>1</span></div>
+                              </div>
+                          </div>
+                          <div class="item">
+                                  <div class="picture">
+                                      <a href="/electrical-quick-disconnect-standard" title="Show details for Electrical quick disconnect - Standard">
+                                          <img alt="Picture of Electrical quick disconnect - Standard" src="http://localhost:15536/images/thumbs/default-image_70.png" title="Show details for Electrical quick disconnect - Standard" />
+                                      </a>
+                                  </div>
+                              <div class="product">
+                                  <div class="name">
+                                      <a href="/electrical-quick-disconnect-standard">Electrical quick disconnect - Standard</a>
+                                  </div>
+                                  <div class="price">Unit price: <span>$13.50</span></div>
+                                  <div class="quantity">Quantity: <span>2</span></div>
+                              </div>
+                          </div>
+                          <div class="item">
+                                  <div class="picture">
+                                      <a href="/aces-and-8s-perfect" title="Show details for Aces and 8&#x27;s perfect">
+                                          <img alt="Picture of Aces and 8&#x27;s perfect" src="http://localhost:15536/images/thumbs/0000091_aces-and-8s-perfect_70.jpeg" title="Show details for Aces and 8&#x27;s perfect" />
+                                      </a>
+                                  </div>
+                              <div class="product">
+                                  <div class="name">
+                                      <a href="/aces-and-8s-perfect">Aces and 8&#x27;s perfect</a>
+                                  </div>
+                                  <div class="price">Unit price: <span>$17.96</span></div>
+                                  <div class="quantity">Quantity: <span>2</span></div>
+                              </div>
+                          </div>
+                  </div>
+                  <div class="totals">Sub-Total: <strong>$112.42</strong></div>
+                  <div class="buttons">
+                          <input type="button" value="Go to cart" class="button-1 cart-button" onclick="setLocation('/cart')" />
+                                  </div>
+          </div>
+      </div>
+       }.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ShoppingCartController.AddProductToCart_Catalog (Nop.Web) in 328.7693ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 418.3255ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/addproducttocart/catalog/82/1/1  0
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ShoppingCartController.AddProductToCart_Catalog (Nop.Web) with arguments (82, 1, 1, False) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor[1]
+      Executing JsonResult, writing value { success = True, message = The product has been added to your <a href="/cart">shopping cart</a>, updatetopcartsectionhtml = (6), updateflyoutcartsectionhtml = <div id="flyout-cart" class="flyout-cart">
+          <div class="mini-shopping-cart">
+              <div class="count">
+      There are <a href="/cart">6 item(s)</a> in your cart.        </div>
+                  <div class="items">
+                          <div class="item first">
+                                  <div class="picture">
+                                      <a href="/1156-12-light-2" title="Show details for 1156 12 Light perfect">
+                                          <img alt="Picture of 1156 12 Light perfect" src="http://localhost:15536/images/thumbs/0000100_1156-12-light-perfect_70.png" title="Show details for 1156 12 Light perfect" />
+                                      </a>
+                                  </div>
+                              <div class="product">
+                                  <div class="name">
+                                      <a href="/1156-12-light-2">1156 12 Light perfect</a>
+                                  </div>
+                                  <div class="price">Unit price: <span>$49.50</span></div>
+                                  <div class="quantity">Quantity: <span>2</span></div>
+                              </div>
+                          </div>
+                          <div class="item">
+                                  <div class="picture">
+                                      <a href="/electrical-quick-disconnect-standard" title="Show details for Electrical quick disconnect - Standard">
+                                          <img alt="Picture of Electrical quick disconnect - Standard" src="http://localhost:15536/images/thumbs/default-image_70.png" title="Show details for Electrical quick disconnect - Standard" />
+                                      </a>
+                                  </div>
+                              <div class="product">
+                                  <div class="name">
+                                      <a href="/electrical-quick-disconnect-standard">Electrical quick disconnect - Standard</a>
+                                  </div>
+                                  <div class="price">Unit price: <span>$13.50</span></div>
+                                  <div class="quantity">Quantity: <span>2</span></div>
+                              </div>
+                          </div>
+                          <div class="item">
+                                  <div class="picture">
+                                      <a href="/aces-and-8s-perfect" title="Show details for Aces and 8&#x27;s perfect">
+                                          <img alt="Picture of Aces and 8&#x27;s perfect" src="http://localhost:15536/images/thumbs/0000091_aces-and-8s-perfect_70.jpeg" title="Show details for Aces and 8&#x27;s perfect" />
+                                      </a>
+                                  </div>
+                              <div class="product">
+                                  <div class="name">
+                                      <a href="/aces-and-8s-perfect">Aces and 8&#x27;s perfect</a>
+                                  </div>
+                                  <div class="price">Unit price: <span>$17.96</span></div>
+                                  <div class="quantity">Quantity: <span>2</span></div>
+                              </div>
+                          </div>
+                  </div>
+                  <div class="totals">Sub-Total: <strong>$161.92</strong></div>
+                  <div class="buttons">
+                          <input type="button" value="Go to cart" class="button-1 cart-button" onclick="setLocation('/cart')" />
+                                  </div>
+          </div>
+      </div>
+       }.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ShoppingCartController.AddProductToCart_Catalog (Nop.Web) in 313.1949ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 397.8564ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/CustomBuilder/ClearBuilderCart  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CustomBuilderController.ClearBuilderCart (Nop.Web) with arguments ((null)) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.RedirectToRouteResult[1]
+      Executing RedirectToRouteResult, redirecting to /cart from route ShoppingCart.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CustomBuilderController.ClearBuilderCart (Nop.Web) in 29.6529ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 108.1991ms 302 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/cart  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ShoppingCartController.Cart (Nop.Web) with arguments ((null)) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/ShoppingCart/Cart.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ShoppingCartController.Cart (Nop.Web) in 4824.1704ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 4892.8625ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/shoppingcart/checkoutattributechange?isEditable=True application/x-www-form-urlencoded; charset=UTF-8 379
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ShoppingCartController.CheckoutAttributeChange (Nop.Web) with arguments (Microsoft.AspNetCore.Http.FormCollection, True) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor[1]
+      Executing JsonResult, writing value { ordetotalssectionhtml = 
+          <div class="total-info">
+              <table class="cart-total">
+                  <tbody>
+                      <tr class="order-subtotal">
+                          <td class="cart-total-left">
+                              <label>Sub-Total:</label>
+                          </td>
+                          <td class="cart-total-right">
+                              <span class="value-summary">$161.92</span>
+                          </td>
+                      </tr>
+                                          <tr class="shipping-cost">
+                              <td class="cart-total-left">
+                                  <label>Shipping:</label>
+                              </td>
+                              <td class="cart-total-right">
+                                          <span class="value-summary">$0.00</span>
+                              </td>
+                          </tr>
+                                                                          <tr class="tax-value">
+                              <td class="cart-total-left">
+                                  <label>Tax:</label>
+                              </td>
+                              <td class="cart-total-right">
+                                  <span class="value-summary">$0.00</span>
+                              </td>
+                          </tr>
+                                                                      <tr class="order-total">
+                          <td class="cart-total-left">
+                              <label>Total:</label>
+                          </td>
+                          <td class="cart-total-right">
+                                  <span class="value-summary"><strong>$161.92</strong></span>
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+      , selectedcheckoutattributesssectionhtml = <div class="selected-checkout-attributes">
+          CustomBuilder: custombuilder<br />Gift wrapping: No
+      </div>, enabledattributeids = System.Int32[], disabledattributeids = System.Int32[] }.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ShoppingCartController.CheckoutAttributeChange (Nop.Web) in 988.5513ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 1083.3875ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 69
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Messages.QueuedMessagesSendTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 95.1613ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 186.1707ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/cart multipart/form-data; boundary=----WebKitFormBoundary7ykqJH7kxiSmOdWC 1788
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ShoppingCartController.UpdateCart (Nop.Web) with arguments (Microsoft.AspNetCore.Http.FormCollection) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/ShoppingCart/Cart.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ShoppingCartController.UpdateCart (Nop.Web) in 362.1973ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 485.5994ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/custombuilder-2  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.TopicController.TopicDetails (Nop.Web) with arguments (13) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Topic/TopicDetails.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.TopicController.TopicDetails (Nop.Web) in 87.1747ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 179.2866ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/CustomBuilder  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CustomBuilderController.Index (Nop.Web) with arguments ((null)) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/CustomBuilder/Index.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CustomBuilderController.Index (Nop.Web) in 178.1297ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 243.9292ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/srcset=%22https:/img.skatewarehouse.com/framework16/images/pros/2x/BARL.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 111.8503ms 404 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/flagc?bldr  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CatalogController.Category (Nop.Web) with arguments (45, Nop.Web.Models.Catalog.CatalogPagingFilteringModel) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Catalog/CategoryTemplate.ProductsInGridOrLines.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CatalogController.Category (Nop.Web) in 384.3028ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 444.1036ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/CustomBuilder?prdidflag=65&prdimgflag=http%3A%2F%2Flocalhost%3A15536%2Fimages%2Fthumbs%2F0000091_aces-and-8s-perfect_415.jpeg&prdnameflag=Aces%20and%208%27s%20perfect&prdskuflag=aces-and-8s-perfect&prdpriceflag=$17.96  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CustomBuilderController.Index (Nop.Web) with arguments ((null)) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/CustomBuilder/Index.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CustomBuilderController.Index (Nop.Web) in 187.1044ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 281.5895ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/srcset=%22https:/img.skatewarehouse.com/framework16/images/pros/2x/BARL.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 84.2563ms 404 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/flag-shaft-2?bldrshaft  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CatalogController.Category (Nop.Web) with arguments (51, Nop.Web.Models.Catalog.CatalogPagingFilteringModel) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Catalog/CategoryTemplate.ProductsInGridOrLines.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CatalogController.Category (Nop.Web) in 298.5459ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 363.5917ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/heavy-duty-livewire?bldrshaft  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ProductController.ProductDetails (Nop.Web) with arguments (71, 0) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Product/ProductTemplate.Simple.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ProductController.ProductDetails (Nop.Web) in 195.4278ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 269.8211ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/shoppingcart/productdetails_attributechange?productId=71&validateAttributeConditions=False&loadPicture=True application/x-www-form-urlencoded; charset=UTF-8 207
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ShoppingCartController.ProductDetails_AttributeChange (Nop.Web) with arguments (71, False, True, Microsoft.AspNetCore.Http.FormCollection) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor[1]
+      Executing JsonResult, writing value { gtin = , mpn = , sku = , price = $170.99, stockAvailability = , enabledattributemappingids = System.Int32[], disabledattributemappingids = System.Int32[], pictureFullSizeUrl = , pictureDefaultSizeUrl = , isFreeShipping = False, message =  }.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ShoppingCartController.ProductDetails_AttributeChange (Nop.Web) in 67.9052ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 151.9116ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/CustomBuilder?prdidflagshaft=71&prdimgflagshaft=http%3A%2F%2Flocalhost%3A15536%2Fimages%2Fthumbs%2F0000095_heavy-duty-livewire.jpeg&prdnameflagshaft=Heavy%20duty%20Livewire&prdskuflagshaft=heavy-duty-livewire&prdpriceflagshaft=189.99  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CustomBuilderController.Index (Nop.Web) with arguments ((null)) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/CustomBuilder/Index.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CustomBuilderController.Index (Nop.Web) in 157.0082ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 229.0706ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/srcset=%22https:/img.skatewarehouse.com/framework16/images/pros/2x/BARL.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 112.6867ms 404 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/quick-disconnectc?qd  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CatalogController.Category (Nop.Web) with arguments (55, Nop.Web.Models.Catalog.CatalogPagingFilteringModel) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Catalog/CategoryTemplate.ProductsInGridOrLines.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CatalogController.Category (Nop.Web) in 342.5095ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 410.9781ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/CustomBuilder?prdidqd=78&prdimgqd=http%3A%2F%2Flocalhost%3A15536%2Fimages%2Fthumbs%2Fdefault-image_415.png&prdnameqd=Electrical%20quick%20disconnect%20-%20Standard&prdskuqd=electrical-quick-disconnect-standard&prdpriceqd=$13.50  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CustomBuilderController.Index (Nop.Web) with arguments ((null)) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/CustomBuilder/Index.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CustomBuilderController.Index (Nop.Web) in 213.7877ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 278.502ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/srcset=%22https:/img.skatewarehouse.com/framework16/images/pros/2x/BARL.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 78.5715ms 404 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/whip-lightingc?wl  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CatalogController.Category (Nop.Web) with arguments (57, Nop.Web.Models.Catalog.CatalogPagingFilteringModel) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Catalog/CategoryTemplate.ProductsInGridOrLines.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CatalogController.Category (Nop.Web) in 258.366ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 321.0958ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/CustomBuilder?prdidwl=82&prdimgwl=http%3A%2F%2Flocalhost%3A15536%2Fimages%2Fthumbs%2F0000100_1156-12-light-perfect_415.png&prdnamewl=1156%2012%20Light%20perfect&prdskuwl=1156-12-light-2&prdpricewl=$49.50  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CustomBuilderController.Index (Nop.Web) with arguments ((null)) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/CustomBuilder/Index.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CustomBuilderController.Index (Nop.Web) in 158.1036ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 253.8917ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/srcset=%22https:/img.skatewarehouse.com/framework16/images/pros/2x/BARL.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 84.9024ms 404 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 69
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Messages.QueuedMessagesSendTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 84.0056ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 177.0128ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 69
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Messages.QueuedMessagesSendTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 85.9857ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 151.6545ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/addproducttocart/catalog/65/1/1  0
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ShoppingCartController.AddProductToCart_Catalog (Nop.Web) with arguments (65, 1, 1, False) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor[1]
+      Executing JsonResult, writing value { success = True, message = The product has been added to your <a href="/cart">shopping cart</a>, updatetopcartsectionhtml = (1), updateflyoutcartsectionhtml = <div id="flyout-cart" class="flyout-cart">
+          <div class="mini-shopping-cart">
+              <div class="count">
+      There are <a href="/cart">1 item(s)</a> in your cart.        </div>
+                  <div class="items">
+                          <div class="item first">
+                                  <div class="picture">
+                                      <a href="/aces-and-8s-perfect" title="Show details for Aces and 8&#x27;s perfect">
+                                          <img alt="Picture of Aces and 8&#x27;s perfect" src="http://localhost:15536/images/thumbs/0000091_aces-and-8s-perfect_70.jpeg" title="Show details for Aces and 8&#x27;s perfect" />
+                                      </a>
+                                  </div>
+                              <div class="product">
+                                  <div class="name">
+                                      <a href="/aces-and-8s-perfect">Aces and 8&#x27;s perfect</a>
+                                  </div>
+                                  <div class="price">Unit price: <span>$17.96</span></div>
+                                  <div class="quantity">Quantity: <span>1</span></div>
+                              </div>
+                          </div>
+                  </div>
+                  <div class="totals">Sub-Total: <strong>$17.96</strong></div>
+                  <div class="buttons">
+                          <input type="button" value="Go to cart" class="button-1 cart-button" onclick="setLocation('/cart')" />
+                                  </div>
+          </div>
+      </div>
+       }.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ShoppingCartController.AddProductToCart_Catalog (Nop.Web) in 199.3165ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 284.5882ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/addproducttocart/catalog/71/1/1  0
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ShoppingCartController.AddProductToCart_Catalog (Nop.Web) with arguments (71, 1, 1, False) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor[1]
+      Executing JsonResult, writing value { redirect = /heavy-duty-livewire }.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ShoppingCartController.AddProductToCart_Catalog (Nop.Web) in 28.8577ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 113.2889ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/addproducttocart/catalog/78/1/1  0
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ShoppingCartController.AddProductToCart_Catalog (Nop.Web) with arguments (78, 1, 1, False) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor[1]
+      Executing JsonResult, writing value { success = True, message = The product has been added to your <a href="/cart">shopping cart</a>, updatetopcartsectionhtml = (2), updateflyoutcartsectionhtml = <div id="flyout-cart" class="flyout-cart">
+          <div class="mini-shopping-cart">
+              <div class="count">
+      There are <a href="/cart">2 item(s)</a> in your cart.        </div>
+                  <div class="items">
+                          <div class="item first">
+                                  <div class="picture">
+                                      <a href="/electrical-quick-disconnect-standard" title="Show details for Electrical quick disconnect - Standard">
+                                          <img alt="Picture of Electrical quick disconnect - Standard" src="http://localhost:15536/images/thumbs/default-image_70.png" title="Show details for Electrical quick disconnect - Standard" />
+                                      </a>
+                                  </div>
+                              <div class="product">
+                                  <div class="name">
+                                      <a href="/electrical-quick-disconnect-standard">Electrical quick disconnect - Standard</a>
+                                  </div>
+                                  <div class="price">Unit price: <span>$13.50</span></div>
+                                  <div class="quantity">Quantity: <span>1</span></div>
+                              </div>
+                          </div>
+                          <div class="item">
+                                  <div class="picture">
+                                      <a href="/aces-and-8s-perfect" title="Show details for Aces and 8&#x27;s perfect">
+                                          <img alt="Picture of Aces and 8&#x27;s perfect" src="http://localhost:15536/images/thumbs/0000091_aces-and-8s-perfect_70.jpeg" title="Show details for Aces and 8&#x27;s perfect" />
+                                      </a>
+                                  </div>
+                              <div class="product">
+                                  <div class="name">
+                                      <a href="/aces-and-8s-perfect">Aces and 8&#x27;s perfect</a>
+                                  </div>
+                                  <div class="price">Unit price: <span>$17.96</span></div>
+                                  <div class="quantity">Quantity: <span>1</span></div>
+                              </div>
+                          </div>
+                  </div>
+                  <div class="totals">Sub-Total: <strong>$31.46</strong></div>
+                  <div class="buttons">
+                          <input type="button" value="Go to cart" class="button-1 cart-button" onclick="setLocation('/cart')" />
+                                  </div>
+          </div>
+      </div>
+       }.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ShoppingCartController.AddProductToCart_Catalog (Nop.Web) in 225.4904ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 307.2446ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/addproducttocart/catalog/82/1/1  0
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ShoppingCartController.AddProductToCart_Catalog (Nop.Web) with arguments (82, 1, 1, False) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor[1]
+      Executing JsonResult, writing value { success = True, message = The product has been added to your <a href="/cart">shopping cart</a>, updatetopcartsectionhtml = (3), updateflyoutcartsectionhtml = <div id="flyout-cart" class="flyout-cart">
+          <div class="mini-shopping-cart">
+              <div class="count">
+      There are <a href="/cart">3 item(s)</a> in your cart.        </div>
+                  <div class="items">
+                          <div class="item first">
+                                  <div class="picture">
+                                      <a href="/1156-12-light-2" title="Show details for 1156 12 Light perfect">
+                                          <img alt="Picture of 1156 12 Light perfect" src="http://localhost:15536/images/thumbs/0000100_1156-12-light-perfect_70.png" title="Show details for 1156 12 Light perfect" />
+                                      </a>
+                                  </div>
+                              <div class="product">
+                                  <div class="name">
+                                      <a href="/1156-12-light-2">1156 12 Light perfect</a>
+                                  </div>
+                                  <div class="price">Unit price: <span>$49.50</span></div>
+                                  <div class="quantity">Quantity: <span>1</span></div>
+                              </div>
+                          </div>
+                          <div class="item">
+                                  <div class="picture">
+                                      <a href="/electrical-quick-disconnect-standard" title="Show details for Electrical quick disconnect - Standard">
+                                          <img alt="Picture of Electrical quick disconnect - Standard" src="http://localhost:15536/images/thumbs/default-image_70.png" title="Show details for Electrical quick disconnect - Standard" />
+                                      </a>
+                                  </div>
+                              <div class="product">
+                                  <div class="name">
+                                      <a href="/electrical-quick-disconnect-standard">Electrical quick disconnect - Standard</a>
+                                  </div>
+                                  <div class="price">Unit price: <span>$13.50</span></div>
+                                  <div class="quantity">Quantity: <span>1</span></div>
+                              </div>
+                          </div>
+                          <div class="item">
+                                  <div class="picture">
+                                      <a href="/aces-and-8s-perfect" title="Show details for Aces and 8&#x27;s perfect">
+                                          <img alt="Picture of Aces and 8&#x27;s perfect" src="http://localhost:15536/images/thumbs/0000091_aces-and-8s-perfect_70.jpeg" title="Show details for Aces and 8&#x27;s perfect" />
+                                      </a>
+                                  </div>
+                              <div class="product">
+                                  <div class="name">
+                                      <a href="/aces-and-8s-perfect">Aces and 8&#x27;s perfect</a>
+                                  </div>
+                                  <div class="price">Unit price: <span>$17.96</span></div>
+                                  <div class="quantity">Quantity: <span>1</span></div>
+                              </div>
+                          </div>
+                  </div>
+                  <div class="totals">Sub-Total: <strong>$80.96</strong></div>
+                  <div class="buttons">
+                          <input type="button" value="Go to cart" class="button-1 cart-button" onclick="setLocation('/cart')" />
+                                  </div>
+          </div>
+      </div>
+       }.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ShoppingCartController.AddProductToCart_Catalog (Nop.Web) in 315.4143ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 391.6992ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/CustomBuilder/ClearBuilderCart  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CustomBuilderController.ClearBuilderCart (Nop.Web) with arguments ((null)) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.RedirectToRouteResult[1]
+      Executing RedirectToRouteResult, redirecting to /cart from route ShoppingCart.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CustomBuilderController.ClearBuilderCart (Nop.Web) in 4.6823ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 112.9823ms 302 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/cart  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ShoppingCartController.Cart (Nop.Web) with arguments ((null)) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/ShoppingCart/Cart.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ShoppingCartController.Cart (Nop.Web) in 2073.018ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 2152.535ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/shoppingcart/checkoutattributechange?isEditable=True application/x-www-form-urlencoded; charset=UTF-8 379
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ShoppingCartController.CheckoutAttributeChange (Nop.Web) with arguments (Microsoft.AspNetCore.Http.FormCollection, True) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor[1]
+      Executing JsonResult, writing value { ordetotalssectionhtml = 
+          <div class="total-info">
+              <table class="cart-total">
+                  <tbody>
+                      <tr class="order-subtotal">
+                          <td class="cart-total-left">
+                              <label>Sub-Total:</label>
+                          </td>
+                          <td class="cart-total-right">
+                              <span class="value-summary">$80.96</span>
+                          </td>
+                      </tr>
+                                          <tr class="shipping-cost">
+                              <td class="cart-total-left">
+                                  <label>Shipping:</label>
+                              </td>
+                              <td class="cart-total-right">
+                                          <span class="value-summary">$0.00</span>
+                              </td>
+                          </tr>
+                                                                          <tr class="tax-value">
+                              <td class="cart-total-left">
+                                  <label>Tax:</label>
+                              </td>
+                              <td class="cart-total-right">
+                                  <span class="value-summary">$0.00</span>
+                              </td>
+                          </tr>
+                                                                      <tr class="order-total">
+                          <td class="cart-total-left">
+                              <label>Total:</label>
+                          </td>
+                          <td class="cart-total-right">
+                                  <span class="value-summary"><strong>$80.96</strong></span>
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+      , selectedcheckoutattributesssectionhtml = <div class="selected-checkout-attributes">
+          CustomBuilder: custombuilder<br />Gift wrapping: No
+      </div>, enabledattributeids = System.Int32[], disabledattributeids = System.Int32[] }.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ShoppingCartController.CheckoutAttributeChange (Nop.Web) in 1034.0978ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 1170.8477ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/custombuilder-2  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.TopicController.TopicDetails (Nop.Web) with arguments (13) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Topic/TopicDetails.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.TopicController.TopicDetails (Nop.Web) in 435.4231ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 510.0946ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/CustomBuilder  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CustomBuilderController.Index (Nop.Web) with arguments ((null)) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/CustomBuilder/Index.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CustomBuilderController.Index (Nop.Web) in 450.3624ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 519.2509ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/srcset=%22https:/img.skatewarehouse.com/framework16/images/pros/2x/BARL.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 181.7398ms 404 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/flagc?bldr  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CatalogController.Category (Nop.Web) with arguments (45, Nop.Web.Models.Catalog.CatalogPagingFilteringModel) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Catalog/CategoryTemplate.ProductsInGridOrLines.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CatalogController.Category (Nop.Web) in 643.2726ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 707.683ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/CustomBuilder?prdidflag=65&prdimgflag=http%3A%2F%2Flocalhost%3A15536%2Fimages%2Fthumbs%2F0000091_aces-and-8s-perfect_415.jpeg&prdnameflag=Aces%20and%208%27s%20perfect&prdskuflag=aces-and-8s-perfect&prdpriceflag=$17.96  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CustomBuilderController.Index (Nop.Web) with arguments ((null)) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/CustomBuilder/Index.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CustomBuilderController.Index (Nop.Web) in 450.5765ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 528.4057ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/srcset=%22https:/img.skatewarehouse.com/framework16/images/pros/2x/BARL.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 107.0822ms 404 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/flag-shaft-2?bldrshaft  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CatalogController.Category (Nop.Web) with arguments (51, Nop.Web.Models.Catalog.CatalogPagingFilteringModel) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Catalog/CategoryTemplate.ProductsInGridOrLines.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CatalogController.Category (Nop.Web) in 554.085ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 626.721ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/heavy-duty-livewire?bldrshaft  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ProductController.ProductDetails (Nop.Web) with arguments (71, 0) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Product/ProductTemplate.Simple.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ProductController.ProductDetails (Nop.Web) in 460.4333ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 527.3047ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/shoppingcart/productdetails_attributechange?productId=71&validateAttributeConditions=False&loadPicture=True application/x-www-form-urlencoded; charset=UTF-8 207
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ShoppingCartController.ProductDetails_AttributeChange (Nop.Web) with arguments (71, False, True, Microsoft.AspNetCore.Http.FormCollection) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor[1]
+      Executing JsonResult, writing value { gtin = , mpn = , sku = , price = $170.99, stockAvailability = , enabledattributemappingids = System.Int32[], disabledattributemappingids = System.Int32[], pictureFullSizeUrl = , pictureDefaultSizeUrl = , isFreeShipping = False, message =  }.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ShoppingCartController.ProductDetails_AttributeChange (Nop.Web) in 96.4137ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 199.2248ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/CustomBuilder?prdidflagshaft=71&prdimgflagshaft=http%3A%2F%2Flocalhost%3A15536%2Fimages%2Fthumbs%2F0000095_heavy-duty-livewire.jpeg&prdnameflagshaft=Heavy%20duty%20Livewire&prdskuflagshaft=heavy-duty-livewire&prdpriceflagshaft=189.99  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CustomBuilderController.Index (Nop.Web) with arguments ((null)) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/CustomBuilder/Index.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CustomBuilderController.Index (Nop.Web) in 423.0467ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 480.2445ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/srcset=%22https:/img.skatewarehouse.com/framework16/images/pros/2x/BARL.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 131.5906ms 404 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/quick-disconnectc?qd  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CatalogController.Category (Nop.Web) with arguments (55, Nop.Web.Models.Catalog.CatalogPagingFilteringModel) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Catalog/CategoryTemplate.ProductsInGridOrLines.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CatalogController.Category (Nop.Web) in 589.1887ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 655.9042ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/CustomBuilder?prdidqd=78&prdimgqd=http%3A%2F%2Flocalhost%3A15536%2Fimages%2Fthumbs%2Fdefault-image_415.png&prdnameqd=Electrical%20quick%20disconnect%20-%20Standard&prdskuqd=electrical-quick-disconnect-standard&prdpriceqd=$13.50  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CustomBuilderController.Index (Nop.Web) with arguments ((null)) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/CustomBuilder/Index.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CustomBuilderController.Index (Nop.Web) in 447.5585ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 522.6793ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/srcset=%22https:/img.skatewarehouse.com/framework16/images/pros/2x/BARL.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 95.506ms 404 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/mounting-bracketc?mb  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CatalogController.Category (Nop.Web) with arguments (56, Nop.Web.Models.Catalog.CatalogPagingFilteringModel) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Catalog/CategoryTemplate.ProductsInGridOrLines.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CatalogController.Category (Nop.Web) in 676.4231ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 771.1803ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/images/thumbs/0000097_l-bracket_415.jpeg  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /images/thumbs/0000097_l-bracket_415.jpeg was not modified
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 65.6586ms 304 image/jpeg
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 64
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Customers.DeleteGuestsTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 58
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Common.KeepAliveTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/keepalive/index  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 32.3194ms 200 
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 182.5784ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 259.0766ms 204 
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 475.0075ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 553.5904ms 204 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/scheduletask/runtask application/x-www-form-urlencoded 69
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) with arguments (Nop.Services.Messages.QueuedMessagesSendTask, Nop.Services) - ModelState is Valid
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/CustomBuilder?prdidmb=80&prdimgmb=http%3A%2F%2Flocalhost%3A15536%2Fimages%2Fthumbs%2Fdefault-image_415.png&prdnamemb=Hitch%20adapter&prdskumb=hitch-adapter&prdpricemb=$44.99  
+info: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing HttpStatusCodeResult, setting HTTP status code 204
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ScheduleTaskController.RunTask (Nop.Web) in 101.0107ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 179.1454ms 204 
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CustomBuilderController.Index (Nop.Web) with arguments ((null)) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/CustomBuilder/Index.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CustomBuilderController.Index (Nop.Web) in 507.8095ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 618.1306ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/srcset=%22https:/img.skatewarehouse.com/framework16/images/pros/2x/BARL.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 122.8398ms 404 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/whip-lightingc?wl  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CatalogController.Category (Nop.Web) with arguments (57, Nop.Web.Models.Catalog.CatalogPagingFilteringModel) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Catalog/CategoryTemplate.ProductsInGridOrLines.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CatalogController.Category (Nop.Web) in 807.7494ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 911.5992ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/CustomBuilder?prdidwl=82&prdimgwl=http%3A%2F%2Flocalhost%3A15536%2Fimages%2Fthumbs%2F0000100_1156-12-light-perfect_415.png&prdnamewl=1156%2012%20Light%20perfect&prdskuwl=1156-12-light-2&prdpricewl=$49.50  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CustomBuilderController.Index (Nop.Web) with arguments ((null)) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/CustomBuilder/Index.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CustomBuilderController.Index (Nop.Web) in 479.4645ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 552.6879ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/srcset=%22https:/img.skatewarehouse.com/framework16/images/pros/2x/BARL.png  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 140.7386ms 404 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/addproducttocart/catalog/65/1/1  0
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ShoppingCartController.AddProductToCart_Catalog (Nop.Web) with arguments (65, 1, 1, False) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor[1]
+      Executing JsonResult, writing value { success = True, message = The product has been added to your <a href="/cart">shopping cart</a>, updatetopcartsectionhtml = (4), updateflyoutcartsectionhtml = <div id="flyout-cart" class="flyout-cart">
+          <div class="mini-shopping-cart">
+              <div class="count">
+      There are <a href="/cart">4 item(s)</a> in your cart.        </div>
+                  <div class="items">
+                          <div class="item first">
+                                  <div class="picture">
+                                      <a href="/1156-12-light-2" title="Show details for 1156 12 Light perfect">
+                                          <img alt="Picture of 1156 12 Light perfect" src="http://localhost:15536/images/thumbs/0000100_1156-12-light-perfect_70.png" title="Show details for 1156 12 Light perfect" />
+                                      </a>
+                                  </div>
+                              <div class="product">
+                                  <div class="name">
+                                      <a href="/1156-12-light-2">1156 12 Light perfect</a>
+                                  </div>
+                                  <div class="price">Unit price: <span>$49.50</span></div>
+                                  <div class="quantity">Quantity: <span>1</span></div>
+                              </div>
+                          </div>
+                          <div class="item">
+                                  <div class="picture">
+                                      <a href="/electrical-quick-disconnect-standard" title="Show details for Electrical quick disconnect - Standard">
+                                          <img alt="Picture of Electrical quick disconnect - Standard" src="http://localhost:15536/images/thumbs/default-image_70.png" title="Show details for Electrical quick disconnect - Standard" />
+                                      </a>
+                                  </div>
+                              <div class="product">
+                                  <div class="name">
+                                      <a href="/electrical-quick-disconnect-standard">Electrical quick disconnect - Standard</a>
+                                  </div>
+                                  <div class="price">Unit price: <span>$13.50</span></div>
+                                  <div class="quantity">Quantity: <span>1</span></div>
+                              </div>
+                          </div>
+                          <div class="item">
+                                  <div class="picture">
+                                      <a href="/aces-and-8s-perfect" title="Show details for Aces and 8&#x27;s perfect">
+                                          <img alt="Picture of Aces and 8&#x27;s perfect" src="http://localhost:15536/images/thumbs/0000091_aces-and-8s-perfect_70.jpeg" title="Show details for Aces and 8&#x27;s perfect" />
+                                      </a>
+                                  </div>
+                              <div class="product">
+                                  <div class="name">
+                                      <a href="/aces-and-8s-perfect">Aces and 8&#x27;s perfect</a>
+                                  </div>
+                                  <div class="price">Unit price: <span>$17.96</span></div>
+                                  <div class="quantity">Quantity: <span>2</span></div>
+                              </div>
+                          </div>
+                  </div>
+                  <div class="totals">Sub-Total: <strong>$98.92</strong></div>
+                  <div class="buttons">
+                          <input type="button" value="Go to cart" class="button-1 cart-button" onclick="setLocation('/cart')" />
+                                  </div>
+          </div>
+      </div>
+       }.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ShoppingCartController.AddProductToCart_Catalog (Nop.Web) in 329.6287ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 415.7949ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/addproducttocart/catalog/71/1/1  0
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ShoppingCartController.AddProductToCart_Catalog (Nop.Web) with arguments (71, 1, 1, False) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor[1]
+      Executing JsonResult, writing value { redirect = /heavy-duty-livewire }.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ShoppingCartController.AddProductToCart_Catalog (Nop.Web) in 31.9323ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 119.5031ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/addproducttocart/catalog/78/1/1  0
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ShoppingCartController.AddProductToCart_Catalog (Nop.Web) with arguments (78, 1, 1, False) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor[1]
+      Executing JsonResult, writing value { success = True, message = The product has been added to your <a href="/cart">shopping cart</a>, updatetopcartsectionhtml = (5), updateflyoutcartsectionhtml = <div id="flyout-cart" class="flyout-cart">
+          <div class="mini-shopping-cart">
+              <div class="count">
+      There are <a href="/cart">5 item(s)</a> in your cart.        </div>
+                  <div class="items">
+                          <div class="item first">
+                                  <div class="picture">
+                                      <a href="/1156-12-light-2" title="Show details for 1156 12 Light perfect">
+                                          <img alt="Picture of 1156 12 Light perfect" src="http://localhost:15536/images/thumbs/0000100_1156-12-light-perfect_70.png" title="Show details for 1156 12 Light perfect" />
+                                      </a>
+                                  </div>
+                              <div class="product">
+                                  <div class="name">
+                                      <a href="/1156-12-light-2">1156 12 Light perfect</a>
+                                  </div>
+                                  <div class="price">Unit price: <span>$49.50</span></div>
+                                  <div class="quantity">Quantity: <span>1</span></div>
+                              </div>
+                          </div>
+                          <div class="item">
+                                  <div class="picture">
+                                      <a href="/electrical-quick-disconnect-standard" title="Show details for Electrical quick disconnect - Standard">
+                                          <img alt="Picture of Electrical quick disconnect - Standard" src="http://localhost:15536/images/thumbs/default-image_70.png" title="Show details for Electrical quick disconnect - Standard" />
+                                      </a>
+                                  </div>
+                              <div class="product">
+                                  <div class="name">
+                                      <a href="/electrical-quick-disconnect-standard">Electrical quick disconnect - Standard</a>
+                                  </div>
+                                  <div class="price">Unit price: <span>$13.50</span></div>
+                                  <div class="quantity">Quantity: <span>2</span></div>
+                              </div>
+                          </div>
+                          <div class="item">
+                                  <div class="picture">
+                                      <a href="/aces-and-8s-perfect" title="Show details for Aces and 8&#x27;s perfect">
+                                          <img alt="Picture of Aces and 8&#x27;s perfect" src="http://localhost:15536/images/thumbs/0000091_aces-and-8s-perfect_70.jpeg" title="Show details for Aces and 8&#x27;s perfect" />
+                                      </a>
+                                  </div>
+                              <div class="product">
+                                  <div class="name">
+                                      <a href="/aces-and-8s-perfect">Aces and 8&#x27;s perfect</a>
+                                  </div>
+                                  <div class="price">Unit price: <span>$17.96</span></div>
+                                  <div class="quantity">Quantity: <span>2</span></div>
+                              </div>
+                          </div>
+                  </div>
+                  <div class="totals">Sub-Total: <strong>$112.42</strong></div>
+                  <div class="buttons">
+                          <input type="button" value="Go to cart" class="button-1 cart-button" onclick="setLocation('/cart')" />
+                                  </div>
+          </div>
+      </div>
+       }.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ShoppingCartController.AddProductToCart_Catalog (Nop.Web) in 325.5025ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 415.2561ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/addproducttocart/catalog/80/1/1  0
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ShoppingCartController.AddProductToCart_Catalog (Nop.Web) with arguments (80, 1, 1, False) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor[1]
+      Executing JsonResult, writing value { success = True, message = The product has been added to your <a href="/cart">shopping cart</a>, updatetopcartsectionhtml = (6), updateflyoutcartsectionhtml = <div id="flyout-cart" class="flyout-cart">
+          <div class="mini-shopping-cart">
+              <div class="count">
+      There are <a href="/cart">6 item(s)</a> in your cart.        </div>
+                  <div class="items">
+                          <div class="item first">
+                                  <div class="picture">
+                                      <a href="/hitch-adapter" title="Show details for Hitch adapter">
+                                          <img alt="Picture of Hitch adapter" src="http://localhost:15536/images/thumbs/default-image_70.png" title="Show details for Hitch adapter" />
+                                      </a>
+                                  </div>
+                              <div class="product">
+                                  <div class="name">
+                                      <a href="/hitch-adapter">Hitch adapter</a>
+                                  </div>
+                                  <div class="price">Unit price: <span>$44.99</span></div>
+                                  <div class="quantity">Quantity: <span>1</span></div>
+                              </div>
+                          </div>
+                          <div class="item">
+                                  <div class="picture">
+                                      <a href="/1156-12-light-2" title="Show details for 1156 12 Light perfect">
+                                          <img alt="Picture of 1156 12 Light perfect" src="http://localhost:15536/images/thumbs/0000100_1156-12-light-perfect_70.png" title="Show details for 1156 12 Light perfect" />
+                                      </a>
+                                  </div>
+                              <div class="product">
+                                  <div class="name">
+                                      <a href="/1156-12-light-2">1156 12 Light perfect</a>
+                                  </div>
+                                  <div class="price">Unit price: <span>$49.50</span></div>
+                                  <div class="quantity">Quantity: <span>1</span></div>
+                              </div>
+                          </div>
+                          <div class="item">
+                                  <div class="picture">
+                                      <a href="/electrical-quick-disconnect-standard" title="Show details for Electrical quick disconnect - Standard">
+                                          <img alt="Picture of Electrical quick disconnect - Standard" src="http://localhost:15536/images/thumbs/default-image_70.png" title="Show details for Electrical quick disconnect - Standard" />
+                                      </a>
+                                  </div>
+                              <div class="product">
+                                  <div class="name">
+                                      <a href="/electrical-quick-disconnect-standard">Electrical quick disconnect - Standard</a>
+                                  </div>
+                                  <div class="price">Unit price: <span>$13.50</span></div>
+                                  <div class="quantity">Quantity: <span>2</span></div>
+                              </div>
+                          </div>
+                          <div class="item">
+                                  <div class="picture">
+                                      <a href="/aces-and-8s-perfect" title="Show details for Aces and 8&#x27;s perfect">
+                                          <img alt="Picture of Aces and 8&#x27;s perfect" src="http://localhost:15536/images/thumbs/0000091_aces-and-8s-perfect_70.jpeg" title="Show details for Aces and 8&#x27;s perfect" />
+                                      </a>
+                                  </div>
+                              <div class="product">
+                                  <div class="name">
+                                      <a href="/aces-and-8s-perfect">Aces and 8&#x27;s perfect</a>
+                                  </div>
+                                  <div class="price">Unit price: <span>$17.96</span></div>
+                                  <div class="quantity">Quantity: <span>2</span></div>
+                              </div>
+                          </div>
+                  </div>
+                  <div class="totals">Sub-Total: <strong>$157.41</strong></div>
+                  <div class="buttons">
+                          <input type="button" value="Go to cart" class="button-1 cart-button" onclick="setLocation('/cart')" />
+                                  </div>
+          </div>
+      </div>
+       }.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ShoppingCartController.AddProductToCart_Catalog (Nop.Web) in 411.0695ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 509.8582ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/addproducttocart/catalog/82/1/1  0
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ShoppingCartController.AddProductToCart_Catalog (Nop.Web) with arguments (82, 1, 1, False) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor[1]
+      Executing JsonResult, writing value { success = True, message = The product has been added to your <a href="/cart">shopping cart</a>, updatetopcartsectionhtml = (7), updateflyoutcartsectionhtml = <div id="flyout-cart" class="flyout-cart">
+          <div class="mini-shopping-cart">
+              <div class="count">
+      There are <a href="/cart">7 item(s)</a> in your cart.        </div>
+                  <div class="items">
+                          <div class="item first">
+                                  <div class="picture">
+                                      <a href="/hitch-adapter" title="Show details for Hitch adapter">
+                                          <img alt="Picture of Hitch adapter" src="http://localhost:15536/images/thumbs/default-image_70.png" title="Show details for Hitch adapter" />
+                                      </a>
+                                  </div>
+                              <div class="product">
+                                  <div class="name">
+                                      <a href="/hitch-adapter">Hitch adapter</a>
+                                  </div>
+                                  <div class="price">Unit price: <span>$44.99</span></div>
+                                  <div class="quantity">Quantity: <span>1</span></div>
+                              </div>
+                          </div>
+                          <div class="item">
+                                  <div class="picture">
+                                      <a href="/1156-12-light-2" title="Show details for 1156 12 Light perfect">
+                                          <img alt="Picture of 1156 12 Light perfect" src="http://localhost:15536/images/thumbs/0000100_1156-12-light-perfect_70.png" title="Show details for 1156 12 Light perfect" />
+                                      </a>
+                                  </div>
+                              <div class="product">
+                                  <div class="name">
+                                      <a href="/1156-12-light-2">1156 12 Light perfect</a>
+                                  </div>
+                                  <div class="price">Unit price: <span>$49.50</span></div>
+                                  <div class="quantity">Quantity: <span>2</span></div>
+                              </div>
+                          </div>
+                          <div class="item">
+                                  <div class="picture">
+                                      <a href="/electrical-quick-disconnect-standard" title="Show details for Electrical quick disconnect - Standard">
+                                          <img alt="Picture of Electrical quick disconnect - Standard" src="http://localhost:15536/images/thumbs/default-image_70.png" title="Show details for Electrical quick disconnect - Standard" />
+                                      </a>
+                                  </div>
+                              <div class="product">
+                                  <div class="name">
+                                      <a href="/electrical-quick-disconnect-standard">Electrical quick disconnect - Standard</a>
+                                  </div>
+                                  <div class="price">Unit price: <span>$13.50</span></div>
+                                  <div class="quantity">Quantity: <span>2</span></div>
+                              </div>
+                          </div>
+                          <div class="item">
+                                  <div class="picture">
+                                      <a href="/aces-and-8s-perfect" title="Show details for Aces and 8&#x27;s perfect">
+                                          <img alt="Picture of Aces and 8&#x27;s perfect" src="http://localhost:15536/images/thumbs/0000091_aces-and-8s-perfect_70.jpeg" title="Show details for Aces and 8&#x27;s perfect" />
+                                      </a>
+                                  </div>
+                              <div class="product">
+                                  <div class="name">
+                                      <a href="/aces-and-8s-perfect">Aces and 8&#x27;s perfect</a>
+                                  </div>
+                                  <div class="price">Unit price: <span>$17.96</span></div>
+                                  <div class="quantity">Quantity: <span>2</span></div>
+                              </div>
+                          </div>
+                  </div>
+                  <div class="totals">Sub-Total: <strong>$206.91</strong></div>
+                  <div class="buttons">
+                          <input type="button" value="Go to cart" class="button-1 cart-button" onclick="setLocation('/cart')" />
+                                  </div>
+          </div>
+      </div>
+       }.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ShoppingCartController.AddProductToCart_Catalog (Nop.Web) in 407.7135ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 488.3893ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/CustomBuilder/ClearBuilderCart  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.CustomBuilderController.ClearBuilderCart (Nop.Web) with arguments ((null)) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.RedirectToRouteResult[1]
+      Executing RedirectToRouteResult, redirecting to /cart from route ShoppingCart.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.CustomBuilderController.ClearBuilderCart (Nop.Web) in 42.0587ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 142.7047ms 302 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:15536/cart  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ShoppingCartController.Cart (Nop.Web) with arguments ((null)) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/ShoppingCart/Cart.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ShoppingCartController.Cart (Nop.Web) in 2439.7539ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 2518.4969ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:15536/shoppingcart/checkoutattributechange?isEditable=True application/x-www-form-urlencoded; charset=UTF-8 397
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method Nop.Web.Controllers.ShoppingCartController.CheckoutAttributeChange (Nop.Web) with arguments (Microsoft.AspNetCore.Http.FormCollection, True) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor[1]
+      Executing JsonResult, writing value { ordetotalssectionhtml = 
+          <div class="total-info">
+              <table class="cart-total">
+                  <tbody>
+                      <tr class="order-subtotal">
+                          <td class="cart-total-left">
+                              <label>Sub-Total:</label>
+                          </td>
+                          <td class="cart-total-right">
+                              <span class="value-summary">$206.91</span>
+                          </td>
+                      </tr>
+                                          <tr class="shipping-cost">
+                              <td class="cart-total-left">
+                                  <label>Shipping:</label>
+                              </td>
+                              <td class="cart-total-right">
+                                          <span class="value-summary">$0.00</span>
+                              </td>
+                          </tr>
+                                                                          <tr class="tax-value">
+                              <td class="cart-total-left">
+                                  <label>Tax:</label>
+                              </td>
+                              <td class="cart-total-right">
+                                  <span class="value-summary">$0.00</span>
+                              </td>
+                          </tr>
+                                                                      <tr class="order-total">
+                          <td class="cart-total-left">
+                              <label>Total:</label>
+                          </td>
+                          <td class="cart-total-right">
+                                  <span class="value-summary"><strong>$206.91</strong></span>
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+      , selectedcheckoutattributesssectionhtml = <div class="selected-checkout-attributes">
+          CustomBuilder: custombuilder<br />Gift wrapping: No
+      </div>, enabledattributeids = System.Int32[], disabledattributeids = System.Int32[] }.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action Nop.Web.Controllers.ShoppingCartController.CheckoutAttributeChange (Nop.Web) in 1280.1158ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 1380.3533ms 200 application/json; charset=utf-8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
